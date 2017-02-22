@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2107D1F1E5D404C0005243E /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D2107D1E1E5D404C0005243E /* intro.mp4 */; };
+		D2107D241E5D4FBD0005243E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2107D231E5D4FBD0005243E /* AVFoundation.framework */; };
+		D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2107D251E5DC52A0005243E /* MenuViewController.swift */; };
 		D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E19871E5A628400B24687 /* AppDelegate.swift */; };
-		D21E198A1E5A628400B24687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E19891E5A628400B24687 /* ViewController.swift */; };
+		D21E198A1E5A628400B24687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E19891E5A628400B24687 /* LoginViewController.swift */; };
 		D21E198D1E5A628400B24687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21E198B1E5A628400B24687 /* Main.storyboard */; };
 		D21E198F1E5A628400B24687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21E198E1E5A628400B24687 /* Assets.xcassets */; };
 		D21E19921E5A628400B24687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21E19901E5A628400B24687 /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2107D1E1E5D404C0005243E /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
+		D2107D231E5D4FBD0005243E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D2107D251E5DC52A0005243E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D21E19841E5A628400B24687 /* Turismo Ya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turismo Ya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21E19871E5A628400B24687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D21E19891E5A628400B24687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D21E19891E5A628400B24687 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D21E198C1E5A628400B24687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D21E198E1E5A628400B24687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D21E19911E5A628400B24687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2107D241E5D4FBD0005243E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2107D1D1E5D3FF30005243E /* assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		D2107D221E5D4FBD0005243E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2107D231E5D4FBD0005243E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D21E197B1E5A628300B24687 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,7 @@
 				D21E199B1E5A628400B24687 /* Turismo YaTests */,
 				D21E19A61E5A628400B24687 /* Turismo YaUITests */,
 				D21E19851E5A628400B24687 /* Products */,
+				D2107D221E5D4FBD0005243E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +120,11 @@
 		D21E19861E5A628400B24687 /* Turismo Ya */ = {
 			isa = PBXGroup;
 			children = (
+				D2107D1E1E5D404C0005243E /* intro.mp4 */,
+				D2107D1D1E5D3FF30005243E /* assets */,
 				D21E19871E5A628400B24687 /* AppDelegate.swift */,
-				D21E19891E5A628400B24687 /* ViewController.swift */,
+				D21E19891E5A628400B24687 /* LoginViewController.swift */,
+				D2107D251E5DC52A0005243E /* MenuViewController.swift */,
 				D21E198B1E5A628400B24687 /* Main.storyboard */,
 				D21E198E1E5A628400B24687 /* Assets.xcassets */,
 				D21E19901E5A628400B24687 /* LaunchScreen.storyboard */,
@@ -232,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2107D1F1E5D404C0005243E /* intro.mp4 in Resources */,
 				D21E19921E5A628400B24687 /* LaunchScreen.storyboard in Resources */,
 				D21E198F1E5A628400B24687 /* Assets.xcassets in Resources */,
 				D21E198D1E5A628400B24687 /* Main.storyboard in Resources */,
@@ -259,8 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21E198A1E5A628400B24687 /* ViewController.swift in Sources */,
+				D21E198A1E5A628400B24687 /* LoginViewController.swift in Sources */,
 				D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */,
+				D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +533,7 @@
 				D21E19AE1E5A628400B24687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D21E19AF1E5A628400B24687 /* Build configuration list for PBXNativeTarget "Turismo YaTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +542,7 @@
 				D21E19B11E5A628400B24687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D21E19B21E5A628400B24687 /* Build configuration list for PBXNativeTarget "Turismo YaUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +551,7 @@
 				D21E19B41E5A628400B24687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
