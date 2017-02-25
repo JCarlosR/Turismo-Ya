@@ -26,10 +26,10 @@ class LoginViewController: UIViewController {
         
         setupVideoBackground()
     }
-    
+        
     func setupVideoBackground() {
         // Adds a black overlay to the looped video in question
-        blackOverlay.alpha = 0.50;
+        blackOverlay.alpha = 0.75;
         blackOverlay.layer.zPosition = 0;
         
         // begin implementing the avplayer

@@ -17,6 +17,9 @@
 		D21E19921E5A628400B24687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D21E19901E5A628400B24687 /* LaunchScreen.storyboard */; };
 		D21E199D1E5A628400B24687 /* Turismo_YaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E199C1E5A628400B24687 /* Turismo_YaTests.swift */; };
 		D21E19A81E5A628400B24687 /* Turismo_YaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E19A71E5A628400B24687 /* Turismo_YaUITests.swift */; };
+		D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F0461E5E01CA00CFFDEC /* CategoryList.swift */; };
+		D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */; };
+		D248F04D1E5E0D6800CFFDEC /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		D21E19A31E5A628400B24687 /* Turismo YaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Turismo YaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21E19A71E5A628400B24687 /* Turismo_YaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turismo_YaUITests.swift; sourceTree = "<group>"; };
 		D21E19A91E5A628400B24687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D248F0461E5E01CA00CFFDEC /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryList.swift; path = model/CategoryList.swift; sourceTree = "<group>"; };
+		D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = ui/CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = ui/CategoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,11 +130,14 @@
 				D2107D1D1E5D3FF30005243E /* assets */,
 				D21E19871E5A628400B24687 /* AppDelegate.swift */,
 				D21E19891E5A628400B24687 /* LoginViewController.swift */,
+				D248F0461E5E01CA00CFFDEC /* CategoryList.swift */,
 				D2107D251E5DC52A0005243E /* MenuViewController.swift */,
 				D21E198B1E5A628400B24687 /* Main.storyboard */,
 				D21E198E1E5A628400B24687 /* Assets.xcassets */,
 				D21E19901E5A628400B24687 /* LaunchScreen.storyboard */,
 				D21E19931E5A628400B24687 /* Info.plist */,
+				D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */,
+				D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */,
 			);
 			path = "Turismo Ya";
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2107D1F1E5D404C0005243E /* intro.mp4 in Resources */,
+				D248F04D1E5E0D6800CFFDEC /* CategoryTableViewCell.xib in Resources */,
 				D21E19921E5A628400B24687 /* LaunchScreen.storyboard in Resources */,
 				D21E198F1E5A628400B24687 /* Assets.xcassets in Resources */,
 				D21E198D1E5A628400B24687 /* Main.storyboard in Resources */,
@@ -286,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */,
 				D21E198A1E5A628400B24687 /* LoginViewController.swift in Sources */,
 				D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */,
 				D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */,
+				D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

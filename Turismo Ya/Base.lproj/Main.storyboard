@@ -43,24 +43,23 @@
                                 <state key="normal" title="Ingresar"/>
                                 <connections>
                                     <action selector="btnLoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ej-FZ-hzt"/>
-                                    <segue destination="bYB-fo-CuA" kind="show" identifier="enterToMenuSegue" id="iqQ-Lw-U0A"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sxf-kI-vJs" secondAttribute="bottom" id="2SV-fI-YtP"/>
-                            <constraint firstItem="Sxf-kI-vJs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="5Tf-ON-bec"/>
-                            <constraint firstItem="gHK-us-7bg" firstAttribute="top" secondItem="sPO-LM-g1e" secondAttribute="bottom" constant="8" id="9aX-vr-JwP"/>
-                            <constraint firstItem="sPO-LM-g1e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cjf-8t-dNP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="gHK-us-7bg" secondAttribute="trailing" id="Ff6-jE-yry"/>
-                            <constraint firstItem="Sxf-kI-vJs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="G5S-hg-PNT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sPO-LM-g1e" secondAttribute="trailing" id="PwR-ze-Kji"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="gHK-us-7bg" secondAttribute="leading" id="Vof-cx-H1g"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Sxf-kI-vJs" secondAttribute="trailing" constant="-16" id="YmK-yy-CXX"/>
-                            <constraint firstItem="4Fj-JS-jJm" firstAttribute="top" secondItem="gHK-us-7bg" secondAttribute="bottom" constant="8" id="oHr-lx-E5M"/>
-                            <constraint firstItem="4Fj-JS-jJm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vCp-1h-yFR"/>
-                            <constraint firstItem="sPO-LM-g1e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="zNd-We-Q0c"/>
+                            <constraint firstItem="sPO-LM-g1e" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0wc-zG-ybG"/>
+                            <constraint firstItem="Sxf-kI-vJs" firstAttribute="centerX" secondItem="4Fj-JS-jJm" secondAttribute="centerX" id="N4X-jZ-0mG"/>
+                            <constraint firstItem="sPO-LM-g1e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N52-vA-2Bw"/>
+                            <constraint firstItem="Sxf-kI-vJs" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Oju-Gf-0d5"/>
+                            <constraint firstItem="Sxf-kI-vJs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hRl-ix-O1I"/>
+                            <constraint firstItem="Sxf-kI-vJs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j5C-0B-Vib"/>
+                            <constraint firstItem="gHK-us-7bg" firstAttribute="top" secondItem="sPO-LM-g1e" secondAttribute="bottom" constant="8" symbolic="YES" id="k5a-l9-asf"/>
+                            <constraint firstItem="4Fj-JS-jJm" firstAttribute="top" secondItem="gHK-us-7bg" secondAttribute="bottom" constant="8" symbolic="YES" id="pIO-wD-BMc"/>
+                            <constraint firstItem="gHK-us-7bg" firstAttribute="centerX" secondItem="4Fj-JS-jJm" secondAttribute="centerX" id="pda-CF-v1W"/>
+                            <constraint firstAttribute="trailing" secondItem="Sxf-kI-vJs" secondAttribute="trailing" id="q4S-a2-DRO"/>
+                            <constraint firstItem="sPO-LM-g1e" firstAttribute="trailing" secondItem="gHK-us-7bg" secondAttribute="trailing" id="xfs-Pj-GXk"/>
+                            <constraint firstItem="sPO-LM-g1e" firstAttribute="leading" secondItem="gHK-us-7bg" secondAttribute="leading" id="xwO-eK-plc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,16 +67,17 @@
                         <outlet property="txtEmail" destination="sPO-LM-g1e" id="NoM-CU-kYh"/>
                         <outlet property="txtPassword" destination="gHK-us-7bg" id="7co-jA-LKV"/>
                         <outlet property="view" destination="Sxf-kI-vJs" id="fW7-Cb-k6E"/>
+                        <segue destination="UOh-pe-ZFf" kind="show" identifier="enterToMenuSegue" id="Mz8-8s-kIL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-18" y="139"/>
         </scene>
-        <!--MenuViewController-->
+        <!--Categorías-->
         <scene sceneID="aIq-B5-ocj">
             <objects>
-                <viewController title="MenuViewController" id="bYB-fo-CuA" customClass="MenuViewController" customModule="Turismo_Ya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bYB-fo-CuA" customClass="MenuViewController" customModule="Turismo_Ya" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UZT-Ef-yKu"/>
                         <viewControllerLayoutGuide type="bottom" id="B7u-oL-7fP"/>
@@ -87,32 +87,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-ua-2H9">
-                                <rect key="frame" x="16" y="53" width="343" height="602"/>
+                                <rect key="frame" x="0.0" y="139" width="375" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="528" id="I9Z-wo-DtZ"/>
+                                </constraints>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Viaja Ya!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNW-je-62D">
-                                <rect key="frame" x="16" y="20" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEG-U4-xqL">
+                                <rect key="frame" x="16" y="64" width="343" height="67"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="hNW-je-62D" secondAttribute="trailing" id="5zw-tm-N36"/>
-                            <constraint firstItem="NDs-ua-2H9" firstAttribute="top" secondItem="hNW-je-62D" secondAttribute="bottom" constant="12" id="Gy6-v1-hqz"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="hNW-je-62D" secondAttribute="leading" id="PZd-CJ-Ou5"/>
-                            <constraint firstItem="hNW-je-62D" firstAttribute="centerX" secondItem="woj-Hj-e4r" secondAttribute="centerX" id="dF8-DX-aqm"/>
-                            <constraint firstItem="B7u-oL-7fP" firstAttribute="top" secondItem="NDs-ua-2H9" secondAttribute="bottom" constant="12" id="frF-oC-q2z"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="NDs-ua-2H9" secondAttribute="leading" id="gLh-ry-fts"/>
-                            <constraint firstItem="hNW-je-62D" firstAttribute="top" secondItem="UZT-Ef-yKu" secondAttribute="bottom" id="t1W-fh-gla"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NDs-ua-2H9" secondAttribute="trailing" id="wO1-Iv-GLi"/>
+                            <constraint firstAttribute="trailing" secondItem="NDs-ua-2H9" secondAttribute="trailing" id="0GO-XT-hev"/>
+                            <constraint firstItem="NDs-ua-2H9" firstAttribute="centerX" secondItem="bEG-U4-xqL" secondAttribute="centerX" id="8AA-Pb-umw"/>
+                            <constraint firstItem="bEG-U4-xqL" firstAttribute="top" secondItem="UZT-Ef-yKu" secondAttribute="bottom" id="Cjk-oQ-9uj"/>
+                            <constraint firstItem="NDs-ua-2H9" firstAttribute="bottom" secondItem="B7u-oL-7fP" secondAttribute="top" id="GIO-2W-IsU"/>
+                            <constraint firstItem="NDs-ua-2H9" firstAttribute="top" secondItem="bEG-U4-xqL" secondAttribute="bottom" constant="8" symbolic="YES" id="Qch-qf-aGR"/>
+                            <constraint firstItem="bEG-U4-xqL" firstAttribute="leading" secondItem="woj-Hj-e4r" secondAttribute="leadingMargin" id="pRC-EV-EbT"/>
+                            <constraint firstItem="NDs-ua-2H9" firstAttribute="leading" secondItem="woj-Hj-e4r" secondAttribute="leading" id="yby-fy-Qnc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Categorías" id="uv0-3g-6jh"/>
+                    <connections>
+                        <outlet property="categoryTableView" destination="NDs-ua-2H9" id="KUk-56-Gnd"/>
+                        <outlet property="pickerViewCity" destination="bEG-U4-xqL" id="3zE-zN-CT7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HCO-8F-IKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629.60000000000002" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1540" y="151.57421289355324"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZzV-A6-GG8">
+            <objects>
+                <navigationController id="UOh-pe-ZFf" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5g8-VA-5bK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bYB-fo-CuA" kind="relationship" relationship="rootViewController" id="pAW-ps-evM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMk-Iv-7bN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="139"/>
         </scene>
     </scenes>
 </document>
