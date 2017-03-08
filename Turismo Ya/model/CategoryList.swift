@@ -7,34 +7,44 @@
 //
 
 import UIKit
+import SDWebImage
 
 struct Category {
     // let cell: Int!
     let name: String!
-    let image: UIImage!
+    let image: String
 }
 
 class CategoryList: NSObject {
-    // weak var delegate: ShowPlacesDelegate?
+    
+    weak var delegate: ShowPlacesDelegate?
+    
+    var categoriesTableView: UITableView?
     
     var categories: [Category] = []
     
-    func addCategory(categoryName: String) {
+    func addCategory(categoryName: String, categoryImageUrl: String) {
         categories.append(
             Category(
                 // cell: 1,
                 name: categoryName,
-                image: #imageLiteral(resourceName: "pajaro azul")
+                image: categoryImageUrl
             )
         )
     }
+    
 }
 
 protocol ShowPlacesDelegate: class {
     func didSelectCategory(categoryName: String)
 }
 
+protocol OpenMapDelegate: class {
+    func openMapView()
+}
+
 extension CategoryList: UITableViewDataSource, UITableViewDelegate {
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
@@ -48,10 +58,14 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
         // Datos de la categoría con índice row
         let category = categories[indexPath.row]
         
-        // Asignamos los valores a la celda y devolvemos
+        // Asignamos los valores a la celda y la devolvemos luego
+        
         // cell.textLabel!.text = categoryName
-        cell.categoryImageView.image = category.image
+        // cell.categoryImageView.image = category.image
+        let imageUrl = URL(string: category.image)
+        cell.categoryImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "pajaro azul"), options: SDWebImageOptions.progressiveDownload)
         cell.categoryNameLabel.text = category.name
+        cell.delegate = delegate as! OpenMapDelegate? // the same instance implements both protocols
         
         return cell
         
@@ -68,8 +82,10 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // A diferencia de print, NSLog permite mostrar mensajes en consola incluso desde otros hilos
         print("Mostrar detalles de la categoría \(categories[indexPath.row].name!)")
-        // ?.didSelectCategory(categoryName: categories[indexPath.row].name)
+        delegate?.didSelectCategory(categoryName: categories[indexPath.row].name)
     }
     
+    
 }
+
 

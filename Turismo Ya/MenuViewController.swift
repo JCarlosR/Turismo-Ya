@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import SDWebImage
 
-class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, ShowPlacesDelegate, OpenMapDelegate {
+    
     @IBOutlet weak var categoryTableView: UITableView!
     
     var categoryList = CategoryList()
@@ -19,16 +21,22 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // categoryList.delegate = self
+        categoryList.delegate = self
         
         loadCities()
         
         loadCategories()
     }
-    
-    /*func didSelectCategory(categoryName: String) {
+        
+    func didSelectCategory(categoryName: String) {
         performSegue(withIdentifier: "showPlacesSegue", sender: self)
-    }*/
+    }
+    
+    func openMapView() {
+        print("openMapView called")
+        performSegue(withIdentifier: "showMapSegue", sender: self)
+    }
+    
     
     var cities: [String] = ["Todos", "Pacasmayo", "Trujillo", "Chimbote"]
     
@@ -55,20 +63,22 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func loadCategories() {
-        categoryList.addCategory(categoryName: "DÓNDE COMER")
-        categoryList.addCategory(categoryName: "OCIO")
-        categoryList.addCategory(categoryName: "HOSPEDAJE")
-        categoryList.addCategory(categoryName: "BARES")
-        categoryList.addCategory(categoryName: "COMPRAS")
+        
+        categoryList.addCategory(categoryName: "DÓNDE COMER", categoryImageUrl: "https://agendamariajulia.files.wordpress.com/2017/02/2paco_1433153168_a.jpg?w=256&h=256&crop=1")
+        categoryList.addCategory(categoryName: "OCIO", categoryImageUrl: "https://i0.wp.com/hurtadointermedia.com/wp-content/uploads/2016/11/birthday-party.jpg")
+        categoryList.addCategory(categoryName: "HOSPEDAJE", categoryImageUrl: "https://pbs.twimg.com/profile_images/3307514251/c499a6d5d7c6e3e52d87248f0dfec7bf.jpeg")
+        categoryList.addCategory(categoryName: "BARES", categoryImageUrl: "https://www.coventgarden.london/sites/default/files/styles/cg_place_detail_1_1/public/cg_images/Lima-Floral-Bajo-Bar-Covent-Garden-2.jpg")
+        categoryList.addCategory(categoryName: "COMPRAS", categoryImageUrl: "http://www.ulmahandling.com/uploads/casos/imagen/256x256/xAlmacenamiento_automatico_EHLIS_2.jpg.pagespeed.ic.vkt_1x9In2.jpg")
         // categoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         categoryTableView.dataSource = categoryList
         categoryTableView.delegate = categoryList
         // categoryTableView.reloadData()
     
         categoryTableView.rowHeight = UITableViewAutomaticDimension
-        categoryTableView.estimatedRowHeight = 500
+        categoryTableView.estimatedRowHeight = 320
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

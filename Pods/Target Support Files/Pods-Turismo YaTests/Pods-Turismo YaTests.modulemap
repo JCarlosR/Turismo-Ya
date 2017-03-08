@@ -1,0 +1,6 @@
+framework module Pods_Turismo_YaTests {
+  umbrella header "Pods-Turismo YaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

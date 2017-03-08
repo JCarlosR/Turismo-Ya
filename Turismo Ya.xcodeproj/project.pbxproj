@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C8A871DD687787CEB881BEE /* Pods_Turismo_YaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D01EEF0235F3B436FEADBFDE /* Pods_Turismo_YaTests.framework */; };
+		791EF711E0B74BE701D8B28B /* Pods_Turismo_Ya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83213F8181881124DA16CA38 /* Pods_Turismo_Ya.framework */; };
+		869C98BB0CF1682C33306FAA /* Pods_Turismo_YaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B6FFEE1C324E9A2B689766E /* Pods_Turismo_YaUITests.framework */; };
 		D2107D1F1E5D404C0005243E /* intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D2107D1E1E5D404C0005243E /* intro.mp4 */; };
-		D2107D241E5D4FBD0005243E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2107D231E5D4FBD0005243E /* AVFoundation.framework */; };
 		D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2107D251E5DC52A0005243E /* MenuViewController.swift */; };
 		D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E19871E5A628400B24687 /* AppDelegate.swift */; };
 		D21E198A1E5A628400B24687 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21E19891E5A628400B24687 /* LoginViewController.swift */; };
@@ -20,6 +22,13 @@
 		D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F0461E5E01CA00CFFDEC /* CategoryList.swift */; };
 		D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */; };
 		D248F04D1E5E0D6800CFFDEC /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */; };
+		D2D45D4C1E667D0600CB574A /* MyGoogleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D4B1E667D0600CB574A /* MyGoogleMapController.swift */; };
+		D2D45D531E69F19100CB574A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D511E69F19100CB574A /* PlaceTableViewCell.swift */; };
+		D2D45D541E69F19100CB574A /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D45D521E69F19100CB574A /* PlaceTableViewCell.xib */; };
+		D2D45D561E69F34F00CB574A /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D551E69F34F00CB574A /* PlacesViewController.swift */; };
+		D2D45D581E69F39D00CB574A /* PlacesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D571E69F39D00CB574A /* PlacesList.swift */; };
+		D2D45D5A1E6A13E500CB574A /* TypePickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D591E6A13E500CB574A /* TypePickerViewAdapter.swift */; };
+		D2D45D5C1E6A15CF00CB574A /* ScorePickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D5B1E6A15CF00CB574A /* ScorePickerViewAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4982C08164045570B56DBF64 /* Pods-Turismo Ya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turismo Ya.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turismo Ya/Pods-Turismo Ya.debug.xcconfig"; sourceTree = "<group>"; };
+		829AD0A9C371DFFCA07042DE /* Pods-Turismo YaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turismo YaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turismo YaUITests/Pods-Turismo YaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83213F8181881124DA16CA38 /* Pods_Turismo_Ya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turismo_Ya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4AD107BA2DEDD9A7FB625F /* Pods-Turismo YaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turismo YaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Turismo YaTests/Pods-Turismo YaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B6FFEE1C324E9A2B689766E /* Pods_Turismo_YaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turismo_YaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF84FC890F00A127ECD02DB /* Pods-Turismo Ya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turismo Ya.release.xcconfig"; path = "Pods/Target Support Files/Pods-Turismo Ya/Pods-Turismo Ya.release.xcconfig"; sourceTree = "<group>"; };
+		D01EEF0235F3B436FEADBFDE /* Pods_Turismo_YaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turismo_YaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11B7D68EB8D03BB521F8ADF /* Pods-Turismo YaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turismo YaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Turismo YaTests/Pods-Turismo YaTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2107D1E1E5D404C0005243E /* intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.mp4; sourceTree = "<group>"; };
-		D2107D231E5D4FBD0005243E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D2107D251E5DC52A0005243E /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D21E19841E5A628400B24687 /* Turismo Ya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Turismo Ya.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21E19871E5A628400B24687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +75,15 @@
 		D248F0461E5E01CA00CFFDEC /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryList.swift; path = model/CategoryList.swift; sourceTree = "<group>"; };
 		D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = ui/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = ui/CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		D2D45D4B1E667D0600CB574A /* MyGoogleMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyGoogleMapController.swift; path = map/MyGoogleMapController.swift; sourceTree = "<group>"; };
+		D2D45D511E69F19100CB574A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		D2D45D521E69F19100CB574A /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
+		D2D45D551E69F34F00CB574A /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesViewController.swift; path = ui/PlacesViewController.swift; sourceTree = "<group>"; };
+		D2D45D571E69F39D00CB574A /* PlacesList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlacesList.swift; path = model/PlacesList.swift; sourceTree = "<group>"; };
+		D2D45D591E6A13E500CB574A /* TypePickerViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypePickerViewAdapter.swift; sourceTree = "<group>"; };
+		D2D45D5B1E6A15CF00CB574A /* ScorePickerViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScorePickerViewAdapter.swift; sourceTree = "<group>"; };
+		D2D45D5D1E6F97C800CB574A /* Turismo Ya-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Turismo Ya-Bridging-Header.h"; sourceTree = "<group>"; };
+		DB610A33EB8FF97932697AA4 /* Pods-Turismo YaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Turismo YaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Turismo YaUITests/Pods-Turismo YaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2107D241E5D4FBD0005243E /* AVFoundation.framework in Frameworks */,
+				791EF711E0B74BE701D8B28B /* Pods_Turismo_Ya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8A871DD687787CEB881BEE /* Pods_Turismo_YaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,25 +107,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				869C98BB0CF1682C33306FAA /* Pods_Turismo_YaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		826278DA36270211FA143128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83213F8181881124DA16CA38 /* Pods_Turismo_Ya.framework */,
+				D01EEF0235F3B436FEADBFDE /* Pods_Turismo_YaTests.framework */,
+				9B6FFEE1C324E9A2B689766E /* Pods_Turismo_YaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3E1B20006713D4C1F52E522 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4982C08164045570B56DBF64 /* Pods-Turismo Ya.debug.xcconfig */,
+				CBF84FC890F00A127ECD02DB /* Pods-Turismo Ya.release.xcconfig */,
+				8E4AD107BA2DEDD9A7FB625F /* Pods-Turismo YaTests.debug.xcconfig */,
+				D11B7D68EB8D03BB521F8ADF /* Pods-Turismo YaTests.release.xcconfig */,
+				829AD0A9C371DFFCA07042DE /* Pods-Turismo YaUITests.debug.xcconfig */,
+				DB610A33EB8FF97932697AA4 /* Pods-Turismo YaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D2107D1D1E5D3FF30005243E /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				D2107D1E1E5D404C0005243E /* intro.mp4 */,
 			);
 			name = assets;
-			sourceTree = "<group>";
-		};
-		D2107D221E5D4FBD0005243E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D2107D231E5D4FBD0005243E /* AVFoundation.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D21E197B1E5A628300B24687 = {
@@ -109,7 +152,8 @@
 				D21E199B1E5A628400B24687 /* Turismo YaTests */,
 				D21E19A61E5A628400B24687 /* Turismo YaUITests */,
 				D21E19851E5A628400B24687 /* Products */,
-				D2107D221E5D4FBD0005243E /* Frameworks */,
+				B3E1B20006713D4C1F52E522 /* Pods */,
+				826278DA36270211FA143128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,18 +170,17 @@
 		D21E19861E5A628400B24687 /* Turismo Ya */ = {
 			isa = PBXGroup;
 			children = (
-				D2107D1E1E5D404C0005243E /* intro.mp4 */,
+				D2D45D501E69F09A00CB574A /* places */,
+				D2D45D4F1E69EE6100CB574A /* maps */,
+				D2D45D4E1E69ED3F00CB574A /* categories */,
+				D2D45D4D1E69ECBB00CB574A /* main */,
 				D2107D1D1E5D3FF30005243E /* assets */,
 				D21E19871E5A628400B24687 /* AppDelegate.swift */,
-				D21E19891E5A628400B24687 /* LoginViewController.swift */,
-				D248F0461E5E01CA00CFFDEC /* CategoryList.swift */,
-				D2107D251E5DC52A0005243E /* MenuViewController.swift */,
 				D21E198B1E5A628400B24687 /* Main.storyboard */,
 				D21E198E1E5A628400B24687 /* Assets.xcassets */,
 				D21E19901E5A628400B24687 /* LaunchScreen.storyboard */,
 				D21E19931E5A628400B24687 /* Info.plist */,
-				D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */,
-				D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */,
+				D2D45D5D1E6F97C800CB574A /* Turismo Ya-Bridging-Header.h */,
 			);
 			path = "Turismo Ya";
 			sourceTree = "<group>";
@@ -160,6 +203,46 @@
 			path = "Turismo YaUITests";
 			sourceTree = "<group>";
 		};
+		D2D45D4D1E69ECBB00CB574A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				D21E19891E5A628400B24687 /* LoginViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		D2D45D4E1E69ED3F00CB574A /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				D2107D251E5DC52A0005243E /* MenuViewController.swift */,
+				D248F0461E5E01CA00CFFDEC /* CategoryList.swift */,
+				D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */,
+				D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
+		D2D45D4F1E69EE6100CB574A /* maps */ = {
+			isa = PBXGroup;
+			children = (
+				D2D45D4B1E667D0600CB574A /* MyGoogleMapController.swift */,
+			);
+			name = maps;
+			sourceTree = "<group>";
+		};
+		D2D45D501E69F09A00CB574A /* places */ = {
+			isa = PBXGroup;
+			children = (
+				D2D45D511E69F19100CB574A /* PlaceTableViewCell.swift */,
+				D2D45D521E69F19100CB574A /* PlaceTableViewCell.xib */,
+				D2D45D551E69F34F00CB574A /* PlacesViewController.swift */,
+				D2D45D571E69F39D00CB574A /* PlacesList.swift */,
+				D2D45D591E6A13E500CB574A /* TypePickerViewAdapter.swift */,
+				D2D45D5B1E6A15CF00CB574A /* ScorePickerViewAdapter.swift */,
+			);
+			name = places;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D21E19AC1E5A628400B24687 /* Build configuration list for PBXNativeTarget "Turismo Ya" */;
 			buildPhases = (
+				91BA95D55A442457CFDAC34E /* [CP] Check Pods Manifest.lock */,
 				D21E19801E5A628300B24687 /* Sources */,
 				D21E19811E5A628300B24687 /* Frameworks */,
 				D21E19821E5A628300B24687 /* Resources */,
+				36CD77022E56C27406123646 /* [CP] Embed Pods Frameworks */,
+				B40F40D1BA347A5BF5E17534 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D21E19AF1E5A628400B24687 /* Build configuration list for PBXNativeTarget "Turismo YaTests" */;
 			buildPhases = (
+				CC62D5CFCE5AAB2582E507C0 /* [CP] Check Pods Manifest.lock */,
 				D21E19941E5A628400B24687 /* Sources */,
 				D21E19951E5A628400B24687 /* Frameworks */,
 				D21E19961E5A628400B24687 /* Resources */,
+				54055AC65F4E936D250213D0 /* [CP] Embed Pods Frameworks */,
+				A8A652D4B2E6568BAD65520E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D21E19B21E5A628400B24687 /* Build configuration list for PBXNativeTarget "Turismo YaUITests" */;
 			buildPhases = (
+				06AE085E9ED05BBE57DE0EFF /* [CP] Check Pods Manifest.lock */,
 				D21E199F1E5A628400B24687 /* Sources */,
 				D21E19A01E5A628400B24687 /* Frameworks */,
 				D21E19A11E5A628400B24687 /* Resources */,
+				A21E50263B51735E2E526F94 /* [CP] Embed Pods Frameworks */,
+				E9E2E9E605BB93A485F6763D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,6 +320,7 @@
 				TargetAttributes = {
 					D21E19831E5A628300B24687 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					D21E19971E5A628400B24687 = {
@@ -272,6 +365,7 @@
 				D21E19921E5A628400B24687 /* LaunchScreen.storyboard in Resources */,
 				D21E198F1E5A628400B24687 /* Assets.xcassets in Resources */,
 				D21E198D1E5A628400B24687 /* Main.storyboard in Resources */,
+				D2D45D541E69F19100CB574A /* PlaceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,15 +385,159 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06AE085E9ED05BBE57DE0EFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36CD77022E56C27406123646 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turismo Ya/Pods-Turismo Ya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54055AC65F4E936D250213D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turismo YaTests/Pods-Turismo YaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91BA95D55A442457CFDAC34E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A21E50263B51735E2E526F94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turismo YaUITests/Pods-Turismo YaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8A652D4B2E6568BAD65520E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turismo YaTests/Pods-Turismo YaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40F40D1BA347A5BF5E17534 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turismo Ya/Pods-Turismo Ya-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC62D5CFCE5AAB2582E507C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E2E9E605BB93A485F6763D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Turismo YaUITests/Pods-Turismo YaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D21E19801E5A628300B24687 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D45D5C1E6A15CF00CB574A /* ScorePickerViewAdapter.swift in Sources */,
 				D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */,
+				D2D45D4C1E667D0600CB574A /* MyGoogleMapController.swift in Sources */,
 				D21E198A1E5A628400B24687 /* LoginViewController.swift in Sources */,
+				D2D45D531E69F19100CB574A /* PlaceTableViewCell.swift in Sources */,
+				D2D45D581E69F39D00CB574A /* PlacesList.swift in Sources */,
+				D2D45D561E69F34F00CB574A /* PlacesViewController.swift in Sources */,
 				D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */,
 				D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */,
+				D2D45D5A1E6A13E500CB574A /* TypePickerViewAdapter.swift in Sources */,
 				D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,30 +688,38 @@
 		};
 		D21E19AD1E5A628400B24687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4982C08164045570B56DBF64 /* Pods-Turismo Ya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Turismo Ya/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pym.Turismo-Ya";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Turismo Ya/Turismo Ya-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D21E19AE1E5A628400B24687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF84FC890F00A127ECD02DB /* Pods-Turismo Ya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Turismo Ya/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "pym.Turismo-Ya";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Turismo Ya/Turismo Ya-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		D21E19B01E5A628400B24687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4AD107BA2DEDD9A7FB625F /* Pods-Turismo YaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +734,7 @@
 		};
 		D21E19B11E5A628400B24687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11B7D68EB8D03BB521F8ADF /* Pods-Turismo YaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +749,7 @@
 		};
 		D21E19B31E5A628400B24687 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829AD0A9C371DFFCA07042DE /* Pods-Turismo YaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Turismo YaUITests/Info.plist";
@@ -515,6 +763,7 @@
 		};
 		D21E19B41E5A628400B24687 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB610A33EB8FF97932697AA4 /* Pods-Turismo YaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Turismo YaUITests/Info.plist";

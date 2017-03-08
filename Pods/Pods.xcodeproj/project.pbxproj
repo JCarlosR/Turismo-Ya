@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C8DE312AF5303CFD775D3143C9C7A7A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0960C09C46180CA869B928F6DB6B /* UIButton+WebCache.m */; };
+		113FB82B323819E63398FFA290F6068F /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3F736F4968881AFE715A91F63DF777 /* SDWebImage-dummy.m */; };
+		15A20AD6DD1FA972FF9C24326DA4959B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */; };
+		1AE639B41DABFE75444C66EBEC21AC83 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C97050C5BB315CF8D59A03899BAFA13 /* ImageIO.framework */; };
+		1C8C8166652D69C94F32CB7612F132C2 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 731799190F5A6EC8FBD6F0DA3B2B63CE /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		416DF99A707760F66D930434F70BC498 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 146615B880BBF9C92EAE415C0E1DB13C /* UIImageView+WebCache.m */; };
+		4374A993B860D21F4629E5EDDAFDC9C9 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD71A421C103EFADDACB381A38E0FDD /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44D3165270FB9AADC0C231E7457EAFD1 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CA3C89B9DE1DA0C6E9D5A6DEFD684F /* UIImage+MultiFormat.m */; };
+		4E905861923C3723B6D656C0BD1656EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */; };
+		4F230FF4C67EECF6FD5485571728DE55 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 63C9D95F70B4B303F6D1DA5D103FA6A7 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FA4EAF64A4F1C128FDF46D329A44521 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7B16BBEB9C5A2BD7B721913D7FE16B /* SDWebImageCompat.m */; };
+		50DDF543F3676C2E05B013BB9FB34E7F /* Pods-Turismo YaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11AABCF774A29F06EE3794ECB526D00B /* Pods-Turismo YaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58F68BC15A5059C06C8E81BB2E173DC7 /* Pods-Turismo YaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D7B87BC4F7A1A66AC37B8546C5DA0D /* Pods-Turismo YaTests-dummy.m */; };
+		5EAB69F0BFA00394733A2DC4084D4C46 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 62C1C97D68C8E4E3ABB35D26B107C7D0 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C449581131A3F3B1A5F3F273B059CC /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F8DF6245054529F8D875C1A709E406 /* SDWebImagePrefetcher.m */; };
+		6D5EEA95D801196AA084471445D00599 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 234D5BA7369CE3879EBD88163EC7217F /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB675775CFE5B77B92BE40F37BBBA01 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = A0D56E5F61FD965632E19969872A4573 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F3EDD885A6FF6C3D8F59A3B78C75AC1 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 762F9C6B7D3187B3721A7D9B7D8D2496 /* NSData+ImageContentType.m */; };
+		7FD2173DF36B6467AD453D2A9C285A0B /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 01759EE1A1B2AD24B1AB4B768E784CFD /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82236EBFDA39634958C48C0C33B43EED /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC1E1122329F85CB721931363D9F1EF /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85E0E886F82BCA1CABCBCD25EB1956DD /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F9B8F78C46C70C54EF9541ED88C748 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA1D184F21312A2F5FB80312FDE0ABE /* Pods-Turismo YaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A14908F06FB648D6B044B0551FC3E16 /* Pods-Turismo YaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D833C6B70432E8A19DBF082FFBC9926 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B04F17A5C5A7AC03334C6914AFF2690 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9292B5D7CDE6CF432D5F2EA4BB390C55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */; };
+		9707A57FF1244CB65ACCFF1E09530881 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 837429B590FC7E775A7CE53FF193727E /* SDWebImageDownloader.m */; };
+		9F5F565C36F2C9F45C294017B99C28A8 /* Pods-Turismo YaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4E7078DF397422A0DC7C035F8A7167 /* Pods-Turismo YaUITests-dummy.m */; };
+		A0BA91F5DAFD7543A8872222D0FE70C6 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = BA988B1E3A223AE2F110EA0DEBB96F76 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6B3E75B9F993BEA250201766DC6391C /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4199194B1785F753EE5710CA910E0C /* SDWebImageManager.m */; };
+		AE73096F2821E583595876731299EBB0 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 611FDD5E9F51565E7FA3AD9E2891DDCA /* UIImageView+HighlightedWebCache.m */; };
+		B3BB1D60691D27AEC268B8ED001FAA47 /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E22DC06FEFF097015634C2BE72768418 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B57CB00CA47E0E172E6A58DF7D4B430F /* Pods-Turismo Ya-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2194401DBE4645F1049BE8CDE90E12 /* Pods-Turismo Ya-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAA552BE93B50AA39B10C1BE556A552F /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E075AA37E0E22C09C0ACAC360C1495D /* SDImageCache.m */; };
+		C30D6162C7DC5BB647BFF00F0976A3E2 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 00793DE8FF7F032C7016762E45C60BC7 /* UIImage+GIF.m */; };
+		DC6D764C84EB6E0FB3511474A4715746 /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = E9FAC0E7912D90644D4D184D40400A47 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCB76E475954EEAF3D65960A95E6A422 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */; };
+		DCC5E00F690037ABA885F3ED442E4C77 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD26503B9656C188E5E499EB7F4CFFF /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E685C8D1B7D3DED4D712E99F2FE93657 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1E8A0F49134822B3B51D6B7837C220 /* SDWebImageDecoder.m */; };
+		E86CC62B96CE4C60D1B68DBAA2CA65FB /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3FAC5FE199411135E257E9177C9BDA /* SDWebImageDownloaderOperation.m */; };
+		EB6B38AD68F6F66C5BEC2656949698D8 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 29885954767FA3C58F007947DC768D10 /* UIView+WebCacheOperation.m */; };
+		EBBB4BFB6B502752B45AC8E75214B09F /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A9EAE343E6BF8296EA360B0CC979CE5 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F06CA37496A9D0B97BFC436526498783 /* Pods-Turismo Ya-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B42703C8532326FAECAD8399F31F135 /* Pods-Turismo Ya-dummy.m */; };
+		F30211F6BF202930DDF367CB49B13846 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BB4C15E9D7630C2625C117CC1DBE8F9 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		160DD3F4220DDEC2DEB9BC82A5533A9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7436A4E5440E283C828CCA45BEAE25;
+			remoteInfo = SDWebImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00793DE8FF7F032C7016762E45C60BC7 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		01759EE1A1B2AD24B1AB4B768E784CFD /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		05818E2E988DE5ABDD9B71D8B783EB7A /* Pods-Turismo YaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo YaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		0685E537073C0BEBE946340EB282F205 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		0A4E7078DF397422A0DC7C035F8A7167 /* Pods-Turismo YaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Turismo YaUITests-dummy.m"; sourceTree = "<group>"; };
+		0E075AA37E0E22C09C0ACAC360C1495D /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		11AABCF774A29F06EE3794ECB526D00B /* Pods-Turismo YaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Turismo YaTests-umbrella.h"; sourceTree = "<group>"; };
+		146615B880BBF9C92EAE415C0E1DB13C /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		17078ECC09EE796F53AB054895C246E4 /* Pods-Turismo YaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Turismo YaUITests.modulemap"; sourceTree = "<group>"; };
+		1B68CD99151129DBDCD20AC6880609F9 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		1D115A3346051D314BA3602B862BE8A3 /* Pods-Turismo YaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo YaTests-resources.sh"; sourceTree = "<group>"; };
+		1E88ACD0AB8C986AEB31485973FEA62C /* Pods_Turismo_YaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Turismo_YaTests.framework; path = "Pods-Turismo YaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		234D5BA7369CE3879EBD88163EC7217F /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		27307FE196709B76C21F8FFADACFC36D /* Pods-Turismo YaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo YaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		27D7B87BC4F7A1A66AC37B8546C5DA0D /* Pods-Turismo YaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Turismo YaTests-dummy.m"; sourceTree = "<group>"; };
+		296224C37DD0585BBD93ECBF9170E04E /* Pods-Turismo YaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Turismo YaTests.modulemap"; sourceTree = "<group>"; };
+		29885954767FA3C58F007947DC768D10 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		2A468E965349BC0C4ACC0A5C4372FF7D /* Pods_Turismo_YaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Turismo_YaUITests.framework; path = "Pods-Turismo YaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B04F17A5C5A7AC03334C6914AFF2690 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		2B42703C8532326FAECAD8399F31F135 /* Pods-Turismo Ya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Turismo Ya-dummy.m"; sourceTree = "<group>"; };
+		2FF8F74075F3971DB148A39B69CB9697 /* Pods-Turismo Ya-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Turismo Ya-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3113BEABB00C63DC9A43B9A064C50963 /* Pods-Turismo YaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo YaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3A14908F06FB648D6B044B0551FC3E16 /* Pods-Turismo YaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Turismo YaUITests-umbrella.h"; sourceTree = "<group>"; };
+		43F8DF6245054529F8D875C1A709E406 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		444A99264C4D774D92B782D215C2702E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E14956A509D62B503C06E6506A1D95 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CA3C89B9DE1DA0C6E9D5A6DEFD684F /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		53475166BEAB97F7895BE4A2789771D1 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		611FDD5E9F51565E7FA3AD9E2891DDCA /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		624326D4053FCFBD4790210C9274252D /* Pods-Turismo Ya-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Turismo Ya-acknowledgements.plist"; sourceTree = "<group>"; };
+		62C1C97D68C8E4E3ABB35D26B107C7D0 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		63C9D95F70B4B303F6D1DA5D103FA6A7 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		686560C021268F9336298055C1CB7838 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0AB365D9BC1C6EA9D1E5D87D15CBFC /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		6A1E8A0F49134822B3B51D6B7837C220 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		731799190F5A6EC8FBD6F0DA3B2B63CE /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		762F9C6B7D3187B3721A7D9B7D8D2496 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		7A2194401DBE4645F1049BE8CDE90E12 /* Pods-Turismo Ya-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Turismo Ya-umbrella.h"; sourceTree = "<group>"; };
+		7A9EAE343E6BF8296EA360B0CC979CE5 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		7CF09D168C802D569AFFE1B1236C7569 /* Pods-Turismo YaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo YaTests.release.xcconfig"; sourceTree = "<group>"; };
+		837429B590FC7E775A7CE53FF193727E /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		88384B2CB0BBE235D4DCBAB126858759 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A377F6051680667AA7D69D16A061082 /* Pods-Turismo YaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Turismo YaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C97050C5BB315CF8D59A03899BAFA13 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		8CDD0960C09C46180CA869B928F6DB6B /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		905D9914C3AD7D7E0DCACCF0E9B77925 /* Pods-Turismo Ya-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo Ya-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9BB4C15E9D7630C2625C117CC1DBE8F9 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		9D3FAC5FE199411135E257E9177C9BDA /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		A0D56E5F61FD965632E19969872A4573 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		A39737549BF081E73A7718682BF18F21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3BBBDD5DE08F5E9EB91B064B282AB64 /* Pods-Turismo Ya.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Turismo Ya.modulemap"; sourceTree = "<group>"; };
+		A895EF24B3331C5A0B7544376FCE9609 /* Pods_Turismo_Ya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Turismo_Ya.framework; path = "Pods-Turismo Ya.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD71A421C103EFADDACB381A38E0FDD /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		ACD26503B9656C188E5E499EB7F4CFFF /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		AF4199194B1785F753EE5710CA910E0C /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		BA988B1E3A223AE2F110EA0DEBB96F76 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		C3672181727C67700120DCEE8BFD3E19 /* Pods-Turismo Ya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo Ya.release.xcconfig"; sourceTree = "<group>"; };
+		CCA229B2D8198A277CE8534F9BEB950D /* Pods-Turismo YaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Turismo YaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE7EAD3002AA618BC4B8D4B0C55C101B /* Pods-Turismo Ya-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo Ya-resources.sh"; sourceTree = "<group>"; };
+		CF70705912C12219A40DE858273D185A /* Pods-Turismo YaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo YaTests-frameworks.sh"; sourceTree = "<group>"; };
+		D3699E214CC946E672885C916FC9302F /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		D9F9B8F78C46C70C54EF9541ED88C748 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		DC7B16BBEB9C5A2BD7B721913D7FE16B /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		DD3B5E4353BF7F97E1CB74BAA2B22350 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		DD3F736F4968881AFE715A91F63DF777 /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		E22DC06FEFF097015634C2BE72768418 /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		E52C4F518F8507AF7CC4E690826432E2 /* Pods-Turismo YaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Turismo YaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5DBD9318FDCDFB1775C3C8869488BF8 /* Pods-Turismo YaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo YaUITests-resources.sh"; sourceTree = "<group>"; };
+		E9FAC0E7912D90644D4D184D40400A47 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		F5F4BB64BD0F65DDD04C9D9202C04013 /* Pods-Turismo YaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Turismo YaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F673D2802DBAA690AC1C3C4F551F035E /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		F9F0F50C8B1E0D3FF5892C6915D93C7D /* Pods-Turismo YaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo YaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCC1E1122329F85CB721931363D9F1EF /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		FD2171E5D80EF3EF1C44ACD8337EC59E /* Pods-Turismo Ya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo Ya.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BD9CE19D0433227A11083BABD5069C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9292B5D7CDE6CF432D5F2EA4BB390C55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D4A8A489D8B501EF884FBF09AB34CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A20AD6DD1FA972FF9C24326DA4959B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46A4F25952E18F751A6EF1A6D9FC042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E905861923C3723B6D656C0BD1656EF /* Foundation.framework in Frameworks */,
+				1AE639B41DABFE75444C66EBEC21AC83 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8B590D2D18B3CC82762FE510B58E21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCB76E475954EEAF3D65960A95E6A422 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10A30B8CC7A6B6924267548018147B2A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7662C2A05C065B6EC507398DBF39D27 /* Pods-Turismo Ya */,
+				5E46926454AC558AE1C6A97F9F5B041B /* Pods-Turismo YaTests */,
+				BE44E3A7C63A41F474F9FD09D31DBF62 /* Pods-Turismo YaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3A8DACD617A691B5BE73402525981F67 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				444A99264C4D774D92B782D215C2702E /* Info.plist */,
+				D3699E214CC946E672885C916FC9302F /* SDWebImage.modulemap */,
+				1B68CD99151129DBDCD20AC6880609F9 /* SDWebImage.xcconfig */,
+				DD3F736F4968881AFE715A91F63DF777 /* SDWebImage-dummy.m */,
+				53475166BEAB97F7895BE4A2789771D1 /* SDWebImage-prefix.pch */,
+				E22DC06FEFF097015634C2BE72768418 /* SDWebImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		3C9B8829BF0781B8F32D7CAEF8769E7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDA4374484F22B4180E2A908586DD5B1 /* GoogleMaps */,
+				6C88DE1ECBE25924BF53469E06218249 /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D84E3C69AE5CBF48F1BFE903C509C33 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E46926454AC558AE1C6A97F9F5B041B /* Pods-Turismo YaTests */ = {
+			isa = PBXGroup;
+			children = (
+				88384B2CB0BBE235D4DCBAB126858759 /* Info.plist */,
+				296224C37DD0585BBD93ECBF9170E04E /* Pods-Turismo YaTests.modulemap */,
+				E52C4F518F8507AF7CC4E690826432E2 /* Pods-Turismo YaTests-acknowledgements.markdown */,
+				CCA229B2D8198A277CE8534F9BEB950D /* Pods-Turismo YaTests-acknowledgements.plist */,
+				27D7B87BC4F7A1A66AC37B8546C5DA0D /* Pods-Turismo YaTests-dummy.m */,
+				CF70705912C12219A40DE858273D185A /* Pods-Turismo YaTests-frameworks.sh */,
+				1D115A3346051D314BA3602B862BE8A3 /* Pods-Turismo YaTests-resources.sh */,
+				11AABCF774A29F06EE3794ECB526D00B /* Pods-Turismo YaTests-umbrella.h */,
+				F9F0F50C8B1E0D3FF5892C6915D93C7D /* Pods-Turismo YaTests.debug.xcconfig */,
+				7CF09D168C802D569AFFE1B1236C7569 /* Pods-Turismo YaTests.release.xcconfig */,
+			);
+			name = "Pods-Turismo YaTests";
+			path = "Target Support Files/Pods-Turismo YaTests";
+			sourceTree = "<group>";
+		};
+		60ACC0CD08A536BC9E8EA00563119062 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0685E537073C0BEBE946340EB282F205 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6162CEF02B0F9F3EE6AD6B8CE983C39E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F673D2802DBAA690AC1C3C4F551F035E /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6C88DE1ECBE25924BF53469E06218249 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				85B88256662D49FC183B3A8EE19F7BA7 /* Core */,
+				3A8DACD617A691B5BE73402525981F67 /* Support Files */,
+			);
+			name = SDWebImage;
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		7D84E3C69AE5CBF48F1BFE903C509C33 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */,
+				8C97050C5BB315CF8D59A03899BAFA13 /* ImageIO.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				3C9B8829BF0781B8F32D7CAEF8769E7A /* Pods */,
+				CB58B10B99FAEF4E4FFC185310F6742E /* Products */,
+				10A30B8CC7A6B6924267548018147B2A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85B88256662D49FC183B3A8EE19F7BA7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ACD26503B9656C188E5E499EB7F4CFFF /* NSData+ImageContentType.h */,
+				762F9C6B7D3187B3721A7D9B7D8D2496 /* NSData+ImageContentType.m */,
+				D9F9B8F78C46C70C54EF9541ED88C748 /* SDImageCache.h */,
+				0E075AA37E0E22C09C0ACAC360C1495D /* SDImageCache.m */,
+				BA988B1E3A223AE2F110EA0DEBB96F76 /* SDWebImageCompat.h */,
+				DC7B16BBEB9C5A2BD7B721913D7FE16B /* SDWebImageCompat.m */,
+				63C9D95F70B4B303F6D1DA5D103FA6A7 /* SDWebImageDecoder.h */,
+				6A1E8A0F49134822B3B51D6B7837C220 /* SDWebImageDecoder.m */,
+				62C1C97D68C8E4E3ABB35D26B107C7D0 /* SDWebImageDownloader.h */,
+				837429B590FC7E775A7CE53FF193727E /* SDWebImageDownloader.m */,
+				234D5BA7369CE3879EBD88163EC7217F /* SDWebImageDownloaderOperation.h */,
+				9D3FAC5FE199411135E257E9177C9BDA /* SDWebImageDownloaderOperation.m */,
+				9BB4C15E9D7630C2625C117CC1DBE8F9 /* SDWebImageManager.h */,
+				AF4199194B1785F753EE5710CA910E0C /* SDWebImageManager.m */,
+				A0D56E5F61FD965632E19969872A4573 /* SDWebImageOperation.h */,
+				E9FAC0E7912D90644D4D184D40400A47 /* SDWebImagePrefetcher.h */,
+				43F8DF6245054529F8D875C1A709E406 /* SDWebImagePrefetcher.m */,
+				2B04F17A5C5A7AC03334C6914AFF2690 /* UIButton+WebCache.h */,
+				8CDD0960C09C46180CA869B928F6DB6B /* UIButton+WebCache.m */,
+				7A9EAE343E6BF8296EA360B0CC979CE5 /* UIImage+GIF.h */,
+				00793DE8FF7F032C7016762E45C60BC7 /* UIImage+GIF.m */,
+				731799190F5A6EC8FBD6F0DA3B2B63CE /* UIImage+MultiFormat.h */,
+				52CA3C89B9DE1DA0C6E9D5A6DEFD684F /* UIImage+MultiFormat.m */,
+				01759EE1A1B2AD24B1AB4B768E784CFD /* UIImageView+HighlightedWebCache.h */,
+				611FDD5E9F51565E7FA3AD9E2891DDCA /* UIImageView+HighlightedWebCache.m */,
+				AAD71A421C103EFADDACB381A38E0FDD /* UIImageView+WebCache.h */,
+				146615B880BBF9C92EAE415C0E1DB13C /* UIImageView+WebCache.m */,
+				FCC1E1122329F85CB721931363D9F1EF /* UIView+WebCacheOperation.h */,
+				29885954767FA3C58F007947DC768D10 /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9DACCFE82D5DE722FED51634FE6C032D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				60ACC0CD08A536BC9E8EA00563119062 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		AB67D877F17DDDFD6F87B98E4161ED7E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				F65DB207C2A1181B03E42808A7937571 /* Frameworks */,
+				6162CEF02B0F9F3EE6AD6B8CE983C39E /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		BE44E3A7C63A41F474F9FD09D31DBF62 /* Pods-Turismo YaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A39737549BF081E73A7718682BF18F21 /* Info.plist */,
+				17078ECC09EE796F53AB054895C246E4 /* Pods-Turismo YaUITests.modulemap */,
+				8A377F6051680667AA7D69D16A061082 /* Pods-Turismo YaUITests-acknowledgements.markdown */,
+				F5F4BB64BD0F65DDD04C9D9202C04013 /* Pods-Turismo YaUITests-acknowledgements.plist */,
+				0A4E7078DF397422A0DC7C035F8A7167 /* Pods-Turismo YaUITests-dummy.m */,
+				05818E2E988DE5ABDD9B71D8B783EB7A /* Pods-Turismo YaUITests-frameworks.sh */,
+				E5DBD9318FDCDFB1775C3C8869488BF8 /* Pods-Turismo YaUITests-resources.sh */,
+				3A14908F06FB648D6B044B0551FC3E16 /* Pods-Turismo YaUITests-umbrella.h */,
+				27307FE196709B76C21F8FFADACFC36D /* Pods-Turismo YaUITests.debug.xcconfig */,
+				3113BEABB00C63DC9A43B9A064C50963 /* Pods-Turismo YaUITests.release.xcconfig */,
+			);
+			name = "Pods-Turismo YaUITests";
+			path = "Target Support Files/Pods-Turismo YaUITests";
+			sourceTree = "<group>";
+		};
+		CB58B10B99FAEF4E4FFC185310F6742E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A895EF24B3331C5A0B7544376FCE9609 /* Pods_Turismo_Ya.framework */,
+				1E88ACD0AB8C986AEB31485973FEA62C /* Pods_Turismo_YaTests.framework */,
+				2A468E965349BC0C4ACC0A5C4372FF7D /* Pods_Turismo_YaUITests.framework */,
+				686560C021268F9336298055C1CB7838 /* SDWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDA4374484F22B4180E2A908586DD5B1 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				9DACCFE82D5DE722FED51634FE6C032D /* Base */,
+				AB67D877F17DDDFD6F87B98E4161ED7E /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		F65DB207C2A1181B03E42808A7937571 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD3B5E4353BF7F97E1CB74BAA2B22350 /* GoogleMaps.framework */,
+				6A0AB365D9BC1C6EA9D1E5D87D15CBFC /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7662C2A05C065B6EC507398DBF39D27 /* Pods-Turismo Ya */ = {
+			isa = PBXGroup;
+			children = (
+				48E14956A509D62B503C06E6506A1D95 /* Info.plist */,
+				A3BBBDD5DE08F5E9EB91B064B282AB64 /* Pods-Turismo Ya.modulemap */,
+				2FF8F74075F3971DB148A39B69CB9697 /* Pods-Turismo Ya-acknowledgements.markdown */,
+				624326D4053FCFBD4790210C9274252D /* Pods-Turismo Ya-acknowledgements.plist */,
+				2B42703C8532326FAECAD8399F31F135 /* Pods-Turismo Ya-dummy.m */,
+				905D9914C3AD7D7E0DCACCF0E9B77925 /* Pods-Turismo Ya-frameworks.sh */,
+				CE7EAD3002AA618BC4B8D4B0C55C101B /* Pods-Turismo Ya-resources.sh */,
+				7A2194401DBE4645F1049BE8CDE90E12 /* Pods-Turismo Ya-umbrella.h */,
+				FD2171E5D80EF3EF1C44ACD8337EC59E /* Pods-Turismo Ya.debug.xcconfig */,
+				C3672181727C67700120DCEE8BFD3E19 /* Pods-Turismo Ya.release.xcconfig */,
+			);
+			name = "Pods-Turismo Ya";
+			path = "Target Support Files/Pods-Turismo Ya";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29D96523BBB2455F2E7BD474BB86EC18 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC5E00F690037ABA885F3ED442E4C77 /* NSData+ImageContentType.h in Headers */,
+				85E0E886F82BCA1CABCBCD25EB1956DD /* SDImageCache.h in Headers */,
+				B3BB1D60691D27AEC268B8ED001FAA47 /* SDWebImage-umbrella.h in Headers */,
+				A0BA91F5DAFD7543A8872222D0FE70C6 /* SDWebImageCompat.h in Headers */,
+				4F230FF4C67EECF6FD5485571728DE55 /* SDWebImageDecoder.h in Headers */,
+				5EAB69F0BFA00394733A2DC4084D4C46 /* SDWebImageDownloader.h in Headers */,
+				6D5EEA95D801196AA084471445D00599 /* SDWebImageDownloaderOperation.h in Headers */,
+				F30211F6BF202930DDF367CB49B13846 /* SDWebImageManager.h in Headers */,
+				7CB675775CFE5B77B92BE40F37BBBA01 /* SDWebImageOperation.h in Headers */,
+				DC6D764C84EB6E0FB3511474A4715746 /* SDWebImagePrefetcher.h in Headers */,
+				8D833C6B70432E8A19DBF082FFBC9926 /* UIButton+WebCache.h in Headers */,
+				EBBB4BFB6B502752B45AC8E75214B09F /* UIImage+GIF.h in Headers */,
+				1C8C8166652D69C94F32CB7612F132C2 /* UIImage+MultiFormat.h in Headers */,
+				7FD2173DF36B6467AD453D2A9C285A0B /* UIImageView+HighlightedWebCache.h in Headers */,
+				4374A993B860D21F4629E5EDDAFDC9C9 /* UIImageView+WebCache.h in Headers */,
+				82236EBFDA39634958C48C0C33B43EED /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86A855EAD6944AF1FF61D91B27D9DF33 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57CB00CA47E0E172E6A58DF7D4B430F /* Pods-Turismo Ya-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9778123337E81DBFAF5E513C0C9FB480 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DDF543F3676C2E05B013BB9FB34E7F /* Pods-Turismo YaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2C146261108C4C2D8D0D6CA04B671AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA1D184F21312A2F5FB80312FDE0ABE /* Pods-Turismo YaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		276F51E72287C549FDCF3A73FB80B70A /* Pods-Turismo YaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D9C99D81705078C99B38A2A4B3649EE /* Build configuration list for PBXNativeTarget "Pods-Turismo YaUITests" */;
+			buildPhases = (
+				1D24B40964D4B21D0D00F01AB7D09C28 /* Sources */,
+				7BD9CE19D0433227A11083BABD5069C9 /* Frameworks */,
+				E2C146261108C4C2D8D0D6CA04B671AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Turismo YaUITests";
+			productName = "Pods-Turismo YaUITests";
+			productReference = 2A468E965349BC0C4ACC0A5C4372FF7D /* Pods_Turismo_YaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		70D8335224B53623CF921021DF95B09A /* Pods-Turismo YaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C040645D71631A5E6DC9713163157708 /* Build configuration list for PBXNativeTarget "Pods-Turismo YaTests" */;
+			buildPhases = (
+				187F07CF72D9F3F5AFC241E784F39BE0 /* Sources */,
+				D8B590D2D18B3CC82762FE510B58E21F /* Frameworks */,
+				9778123337E81DBFAF5E513C0C9FB480 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Turismo YaTests";
+			productName = "Pods-Turismo YaTests";
+			productReference = 1E88ACD0AB8C986AEB31485973FEA62C /* Pods_Turismo_YaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C3F6CD8C4C6CDF39F9BB4EFA77617C03 /* Pods-Turismo Ya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 329A10174280690D8577F5BB774500EA /* Build configuration list for PBXNativeTarget "Pods-Turismo Ya" */;
+			buildPhases = (
+				90C51AC77CCFF68A57E051C29D49A486 /* Sources */,
+				80D4A8A489D8B501EF884FBF09AB34CE /* Frameworks */,
+				86A855EAD6944AF1FF61D91B27D9DF33 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B087F75BFD72573D5B2391FD324142A0 /* PBXTargetDependency */,
+			);
+			name = "Pods-Turismo Ya";
+			productName = "Pods-Turismo Ya";
+			productReference = A895EF24B3331C5A0B7544376FCE9609 /* Pods_Turismo_Ya.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE7436A4E5440E283C828CCA45BEAE25 /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1E227CA45778518D4B756BA96A8B74C /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				AFE6D621FD86D54B8B8506F471D60D95 /* Sources */,
+				D46A4F25952E18F751A6EF1A6D9FC042 /* Frameworks */,
+				29D96523BBB2455F2E7BD474BB86EC18 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = 686560C021268F9336298055C1CB7838 /* SDWebImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CB58B10B99FAEF4E4FFC185310F6742E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3F6CD8C4C6CDF39F9BB4EFA77617C03 /* Pods-Turismo Ya */,
+				70D8335224B53623CF921021DF95B09A /* Pods-Turismo YaTests */,
+				276F51E72287C549FDCF3A73FB80B70A /* Pods-Turismo YaUITests */,
+				CE7436A4E5440E283C828CCA45BEAE25 /* SDWebImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187F07CF72D9F3F5AFC241E784F39BE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F68BC15A5059C06C8E81BB2E173DC7 /* Pods-Turismo YaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D24B40964D4B21D0D00F01AB7D09C28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F5F565C36F2C9F45C294017B99C28A8 /* Pods-Turismo YaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C51AC77CCFF68A57E051C29D49A486 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06CA37496A9D0B97BFC436526498783 /* Pods-Turismo Ya-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFE6D621FD86D54B8B8506F471D60D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3EDD885A6FF6C3D8F59A3B78C75AC1 /* NSData+ImageContentType.m in Sources */,
+				BAA552BE93B50AA39B10C1BE556A552F /* SDImageCache.m in Sources */,
+				113FB82B323819E63398FFA290F6068F /* SDWebImage-dummy.m in Sources */,
+				4FA4EAF64A4F1C128FDF46D329A44521 /* SDWebImageCompat.m in Sources */,
+				E685C8D1B7D3DED4D712E99F2FE93657 /* SDWebImageDecoder.m in Sources */,
+				9707A57FF1244CB65ACCFF1E09530881 /* SDWebImageDownloader.m in Sources */,
+				E86CC62B96CE4C60D1B68DBAA2CA65FB /* SDWebImageDownloaderOperation.m in Sources */,
+				A6B3E75B9F993BEA250201766DC6391C /* SDWebImageManager.m in Sources */,
+				62C449581131A3F3B1A5F3F273B059CC /* SDWebImagePrefetcher.m in Sources */,
+				0C8DE312AF5303CFD775D3143C9C7A7A /* UIButton+WebCache.m in Sources */,
+				C30D6162C7DC5BB647BFF00F0976A3E2 /* UIImage+GIF.m in Sources */,
+				44D3165270FB9AADC0C231E7457EAFD1 /* UIImage+MultiFormat.m in Sources */,
+				AE73096F2821E583595876731299EBB0 /* UIImageView+HighlightedWebCache.m in Sources */,
+				416DF99A707760F66D930434F70BC498 /* UIImageView+WebCache.m in Sources */,
+				EB6B38AD68F6F66C5BEC2656949698D8 /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B087F75BFD72573D5B2391FD324142A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = CE7436A4E5440E283C828CCA45BEAE25 /* SDWebImage */;
+			targetProxy = 160DD3F4220DDEC2DEB9BC82A5533A9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0410FC1C1AABE00B48B4C41F806364AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2171E5D80EF3EF1C44ACD8337EC59E /* Pods-Turismo Ya.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Turismo Ya/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Turismo Ya/Pods-Turismo Ya.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Turismo_Ya;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3E07F5C067303970289B81F8864CB53D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27307FE196709B76C21F8FFADACFC36D /* Pods-Turismo YaUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Turismo YaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Turismo YaUITests/Pods-Turismo YaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Turismo_YaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78E572A08A90EE84B0F0E6B1D43859A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B68CD99151129DBDCD20AC6880609F9 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBDD2FDFC11D8382725A4E27F858069D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F0F50C8B1E0D3FF5892C6915D93C7D /* Pods-Turismo YaTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Turismo YaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Turismo YaTests/Pods-Turismo YaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Turismo_YaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6B7AD7F1D710198731ACB3E5FEB269F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3113BEABB00C63DC9A43B9A064C50963 /* Pods-Turismo YaUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Turismo YaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Turismo YaUITests/Pods-Turismo YaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Turismo_YaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D74F31B55D36DD8A1C63D746E97BA6AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CF09D168C802D569AFFE1B1236C7569 /* Pods-Turismo YaTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Turismo YaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Turismo YaTests/Pods-Turismo YaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Turismo_YaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EC9EAAFADE7209BBE5E256326DC325A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B68CD99151129DBDCD20AC6880609F9 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5FA3C8FB210C82B3E05F783DE42E050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3672181727C67700120DCEE8BFD3E19 /* Pods-Turismo Ya.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Turismo Ya/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Turismo Ya/Pods-Turismo Ya.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Turismo_Ya;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		329A10174280690D8577F5BB774500EA /* Build configuration list for PBXNativeTarget "Pods-Turismo Ya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0410FC1C1AABE00B48B4C41F806364AE /* Debug */,
+				F5FA3C8FB210C82B3E05F783DE42E050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D9C99D81705078C99B38A2A4B3649EE /* Build configuration list for PBXNativeTarget "Pods-Turismo YaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E07F5C067303970289B81F8864CB53D /* Debug */,
+				D6B7AD7F1D710198731ACB3E5FEB269F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C040645D71631A5E6DC9713163157708 /* Build configuration list for PBXNativeTarget "Pods-Turismo YaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBDD2FDFC11D8382725A4E27F858069D /* Debug */,
+				D74F31B55D36DD8A1C63D746E97BA6AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1E227CA45778518D4B756BA96A8B74C /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC9EAAFADE7209BBE5E256326DC325A2 /* Debug */,
+				78E572A08A90EE84B0F0E6B1D43859A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

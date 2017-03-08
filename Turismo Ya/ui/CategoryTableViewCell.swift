@@ -9,11 +9,17 @@
 import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
+    
+    weak var delegate: OpenMapDelegate?
+    
     @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var categoryImageView: UIImageView!
     
     @IBAction func showCategoryMapPressed(_ sender: Any) {
         print("Mostrar mapa de \(categoryNameLabel.text)")
+        
+        delegate?.openMapView()
+        // self.performSegue(withIdentifier: "showMapSegue", sender: self)
     }
     
     override func awakeFromNib() {
