@@ -70,16 +70,16 @@
 		0E075AA37E0E22C09C0ACAC360C1495D /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
 		11AABCF774A29F06EE3794ECB526D00B /* Pods-Turismo YaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Turismo YaTests-umbrella.h"; sourceTree = "<group>"; };
 		146615B880BBF9C92EAE415C0E1DB13C /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		17078ECC09EE796F53AB054895C246E4 /* Pods-Turismo YaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Turismo YaUITests.modulemap"; sourceTree = "<group>"; };
+		17078ECC09EE796F53AB054895C246E4 /* Pods-Turismo YaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Turismo YaUITests.modulemap"; sourceTree = "<group>"; };
 		1B68CD99151129DBDCD20AC6880609F9 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		1D115A3346051D314BA3602B862BE8A3 /* Pods-Turismo YaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo YaTests-resources.sh"; sourceTree = "<group>"; };
-		1E88ACD0AB8C986AEB31485973FEA62C /* Pods_Turismo_YaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Turismo_YaTests.framework; path = "Pods-Turismo YaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E88ACD0AB8C986AEB31485973FEA62C /* Pods_Turismo_YaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turismo_YaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		234D5BA7369CE3879EBD88163EC7217F /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
 		27307FE196709B76C21F8FFADACFC36D /* Pods-Turismo YaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Turismo YaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		27D7B87BC4F7A1A66AC37B8546C5DA0D /* Pods-Turismo YaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Turismo YaTests-dummy.m"; sourceTree = "<group>"; };
-		296224C37DD0585BBD93ECBF9170E04E /* Pods-Turismo YaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Turismo YaTests.modulemap"; sourceTree = "<group>"; };
+		296224C37DD0585BBD93ECBF9170E04E /* Pods-Turismo YaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Turismo YaTests.modulemap"; sourceTree = "<group>"; };
 		29885954767FA3C58F007947DC768D10 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		2A468E965349BC0C4ACC0A5C4372FF7D /* Pods_Turismo_YaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Turismo_YaUITests.framework; path = "Pods-Turismo YaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A468E965349BC0C4ACC0A5C4372FF7D /* Pods_Turismo_YaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turismo_YaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B04F17A5C5A7AC03334C6914AFF2690 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		2B42703C8532326FAECAD8399F31F135 /* Pods-Turismo Ya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Turismo Ya-dummy.m"; sourceTree = "<group>"; };
 		2FF8F74075F3971DB148A39B69CB9697 /* Pods-Turismo Ya-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Turismo Ya-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		624326D4053FCFBD4790210C9274252D /* Pods-Turismo Ya-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Turismo Ya-acknowledgements.plist"; sourceTree = "<group>"; };
 		62C1C97D68C8E4E3ABB35D26B107C7D0 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
 		63C9D95F70B4B303F6D1DA5D103FA6A7 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
-		686560C021268F9336298055C1CB7838 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		686560C021268F9336298055C1CB7838 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0AB365D9BC1C6EA9D1E5D87D15CBFC /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		6A1E8A0F49134822B3B51D6B7837C220 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
 		731799190F5A6EC8FBD6F0DA3B2B63CE /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
@@ -108,14 +108,14 @@
 		8C97050C5BB315CF8D59A03899BAFA13 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		8CDD0960C09C46180CA869B928F6DB6B /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
 		905D9914C3AD7D7E0DCACCF0E9B77925 /* Pods-Turismo Ya-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo Ya-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9757679632F4D96FB95D495ADE43F19A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9BB4C15E9D7630C2625C117CC1DBE8F9 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
 		9D3FAC5FE199411135E257E9177C9BDA /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		A0D56E5F61FD965632E19969872A4573 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
 		A39737549BF081E73A7718682BF18F21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3BBBDD5DE08F5E9EB91B064B282AB64 /* Pods-Turismo Ya.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Turismo Ya.modulemap"; sourceTree = "<group>"; };
-		A895EF24B3331C5A0B7544376FCE9609 /* Pods_Turismo_Ya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Turismo_Ya.framework; path = "Pods-Turismo Ya.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3BBBDD5DE08F5E9EB91B064B282AB64 /* Pods-Turismo Ya.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Turismo Ya.modulemap"; sourceTree = "<group>"; };
+		A895EF24B3331C5A0B7544376FCE9609 /* Pods_Turismo_Ya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Turismo_Ya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD71A421C103EFADDACB381A38E0FDD /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		ACD26503B9656C188E5E499EB7F4CFFF /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
 		AF4199194B1785F753EE5710CA910E0C /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		CCA229B2D8198A277CE8534F9BEB950D /* Pods-Turismo YaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Turismo YaTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CE7EAD3002AA618BC4B8D4B0C55C101B /* Pods-Turismo Ya-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo Ya-resources.sh"; sourceTree = "<group>"; };
 		CF70705912C12219A40DE858273D185A /* Pods-Turismo YaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Turismo YaTests-frameworks.sh"; sourceTree = "<group>"; };
-		D3699E214CC946E672885C916FC9302F /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		D3699E214CC946E672885C916FC9302F /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SDWebImage.modulemap; sourceTree = "<group>"; };
 		D9F9B8F78C46C70C54EF9541ED88C748 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
 		DC7B16BBEB9C5A2BD7B721913D7FE16B /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
 		DD3B5E4353BF7F97E1CB74BAA2B22350 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
@@ -258,7 +258,6 @@
 				85B88256662D49FC183B3A8EE19F7BA7 /* Core */,
 				3A8DACD617A691B5BE73402525981F67 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -370,7 +369,6 @@
 				9DACCFE82D5DE722FED51634FE6C032D /* Base */,
 				AB67D877F17DDDFD6F87B98E4161ED7E /* Maps */,
 			);
-			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};

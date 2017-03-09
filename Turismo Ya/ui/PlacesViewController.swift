@@ -52,7 +52,7 @@ class PlacesViewController: UIViewController {
         // categoryTableView.reloadData()
         
         tableViewPlaces.rowHeight = UITableViewAutomaticDimension
-        // tableViewPlaces.estimatedRowHeight = 320
+        tableViewPlaces.estimatedRowHeight = 320
     }
     
     override func didReceiveMemoryWarning() {

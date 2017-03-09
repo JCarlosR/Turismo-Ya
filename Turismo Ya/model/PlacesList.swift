@@ -53,5 +53,6 @@ extension PlacesList: UITableViewDataSource, UITableViewDelegate {
         // delegate?.didSelectCategory(categoryName: categories[indexPath.row].name)
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { return 125 }
 }
 

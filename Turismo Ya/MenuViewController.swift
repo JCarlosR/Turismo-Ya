@@ -68,12 +68,13 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         categoryList.addCategory(categoryName: "OCIO", categoryImageUrl: "https://i0.wp.com/hurtadointermedia.com/wp-content/uploads/2016/11/birthday-party.jpg")
         categoryList.addCategory(categoryName: "HOSPEDAJE", categoryImageUrl: "https://pbs.twimg.com/profile_images/3307514251/c499a6d5d7c6e3e52d87248f0dfec7bf.jpeg")
         categoryList.addCategory(categoryName: "BARES", categoryImageUrl: "https://www.coventgarden.london/sites/default/files/styles/cg_place_detail_1_1/public/cg_images/Lima-Floral-Bajo-Bar-Covent-Garden-2.jpg")
-        categoryList.addCategory(categoryName: "COMPRAS", categoryImageUrl: "http://www.ulmahandling.com/uploads/casos/imagen/256x256/xAlmacenamiento_automatico_EHLIS_2.jpg.pagespeed.ic.vkt_1x9In2.jpg")
+        categoryList.addCategory(categoryName: "COMPRAS", categoryImageUrl: "http://coliseo-intl.com/wp-content/uploads/2015/03/compras1.jpg")
         // categoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         categoryTableView.dataSource = categoryList
         categoryTableView.delegate = categoryList
         // categoryTableView.reloadData()
-    
+        
+        
         categoryTableView.rowHeight = UITableViewAutomaticDimension
         categoryTableView.estimatedRowHeight = 320
     }
