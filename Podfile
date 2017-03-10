@@ -21,5 +21,7 @@ target 'Turismo Ya' do
   pod 'GoogleMaps'
 
   pod 'SDWebImage', '~>3.8'
+
+  pod 'Alamofire', '~> 4.4'
   
 end

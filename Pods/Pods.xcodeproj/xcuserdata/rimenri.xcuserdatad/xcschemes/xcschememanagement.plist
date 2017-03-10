@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Turismo Ya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3F6CD8C4C6CDF39F9BB4EFA77617C03</key>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE7436A4E5440E283C828CCA45BEAE25</key>
+		<key>C490A266C50118EC7FC2462861AA330E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0582869EDFC419C93BC68AFD4BD3B1F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -25,6 +25,7 @@
 		D285691E1E72044200F630F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D285691D1E72044200F630F4 /* logo.png */; };
 		D28569201E7216A600F630F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285691F1E7216A600F630F4 /* RegisterViewController.swift */; };
 		D28569221E727BCF00F630F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28569211E727BCF00F630F4 /* LoginViewController.swift */; };
+		D28569251E73509700F630F4 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28569241E73509700F630F4 /* City.swift */; };
 		D2D45D4C1E667D0600CB574A /* MyGoogleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D4B1E667D0600CB574A /* MyGoogleMapController.swift */; };
 		D2D45D531E69F19100CB574A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D45D511E69F19100CB574A /* PlaceTableViewCell.swift */; };
 		D2D45D541E69F19100CB574A /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2D45D521E69F19100CB574A /* PlaceTableViewCell.xib */; };
@@ -81,6 +82,7 @@
 		D285691D1E72044200F630F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		D285691F1E7216A600F630F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D28569211E727BCF00F630F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D28569241E73509700F630F4 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = model/City.swift; sourceTree = "<group>"; };
 		D2D45D4B1E667D0600CB574A /* MyGoogleMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyGoogleMapController.swift; path = map/MyGoogleMapController.swift; sourceTree = "<group>"; };
 		D2D45D511E69F19100CB574A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		D2D45D521E69F19100CB574A /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		D21E19861E5A628400B24687 /* Turismo Ya */ = {
 			isa = PBXGroup;
 			children = (
+				D28569231E73507B00F630F4 /* model */,
 				D2D45D501E69F09A00CB574A /* places */,
 				D2D45D4F1E69EE6100CB574A /* maps */,
 				D2D45D4E1E69ED3F00CB574A /* categories */,
@@ -208,6 +211,14 @@
 				D21E19A91E5A628400B24687 /* Info.plist */,
 			);
 			path = "Turismo YaUITests";
+			sourceTree = "<group>";
+		};
+		D28569231E73507B00F630F4 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D28569241E73509700F630F4 /* City.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		D2D45D4D1E69ECBB00CB574A /* main */ = {
@@ -544,6 +555,7 @@
 				D28569201E7216A600F630F4 /* RegisterViewController.swift in Sources */,
 				D21E198A1E5A628400B24687 /* MainViewController.swift in Sources */,
 				D2D45D531E69F19100CB574A /* PlaceTableViewCell.swift in Sources */,
+				D28569251E73509700F630F4 /* City.swift in Sources */,
 				D2D45D581E69F39D00CB574A /* PlacesList.swift in Sources */,
 				D2D45D561E69F34F00CB574A /* PlacesViewController.swift in Sources */,
 				D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */,
