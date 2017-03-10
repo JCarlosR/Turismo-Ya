@@ -10,6 +10,8 @@ import UIKit
 
 class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    weak var delegate: TypeSelectedDelegate?
+    
     var types: [String] = ["CARNES", "PESCADOS Y MARISCOS", "VEGETARIANA", "POLLOS A LA BRASA", "COMIDA RÁPIDA"]
     
     
@@ -27,6 +29,12 @@ class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("Tipo seleccionado: \(types[row])")
+        delegate?.newTypeWasSelected(typeName: types[row])
+        // print("Tipo seleccionado: \(types[row])")
     }
+}
+
+
+protocol TypeSelectedDelegate: class {
+    func newTypeWasSelected(typeName: String)
 }

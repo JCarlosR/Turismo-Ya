@@ -1,19 +1,22 @@
 //
-//  LoginViewController.swift
+//  RegisterViewController.swift
 //  Turismo Ya
 //
-//  Created by rimenri on 10/03/2017.
+//  Created by rimenri on 09/03/2017.
 //  Copyright © 2017 Programación y más. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var labelAccept: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        labelAccept.numberOfLines = 2
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,6 +25,10 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func btnBackPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+        // _ = navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

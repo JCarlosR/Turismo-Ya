@@ -8,13 +8,17 @@
 
 import UIKit
 
-class PlacesViewController: UIViewController {
+class PlacesViewController: UIViewController,
+    TypeSelectedDelegate, ScoreSelectedDelegate {
     
-
-    @IBOutlet weak var pickerViewType: UIPickerView!
-    @IBOutlet weak var pickerViewScore: UIPickerView!
+    var pickerViewType: UIPickerView! = UIPickerView()
+    var pickerViewScore: UIPickerView! = UIPickerView()
+    
     @IBOutlet weak var tableViewPlaces: UITableView!
     
+    @IBOutlet weak var txtType: UITextField!
+    @IBOutlet weak var txtScore: UITextField!
+        
     var placesList = PlacesList()
     
     var typePickerAdapter = TypePickerViewAdapter()
@@ -32,13 +36,28 @@ class PlacesViewController: UIViewController {
     
 
     func loadTypesAndScores() {
+        // Data source and delegate for types
         pickerViewType.dataSource = typePickerAdapter
         pickerViewType.delegate = typePickerAdapter
+        // Bind with the proper textField
+        txtType.inputView = pickerViewType
         
+        // Data source and delegate for scores
         pickerViewScore.dataSource = scorePickerAdapter
         pickerViewScore.delegate = scorePickerAdapter
+        // Bind with the proper textField
+        txtScore.inputView = pickerViewScore
     }
     
+    func newTypeWasSelected(typeName: String) {
+        txtType.text = typeName
+        self.view.endEditing(true)
+    }
+    
+    func newScoreWasSelected(scoreName: String) {
+        txtScore.text = scoreName
+        self.view.endEditing(true)
+    }
 
     
     func loadPlaces() {

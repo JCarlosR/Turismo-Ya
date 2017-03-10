@@ -10,6 +10,8 @@ import UIKit
 
 class ScorePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    weak var delegate: ScoreSelectedDelegate?
+    
     var scores: [String] = ["5 PUNTOS", "4 PUNTOS O MÁS", "3 PUNTOS O MÁS", "2 PUNTOS O MÁS", "TODOS LOS LUGARES"]
     
     
@@ -22,11 +24,15 @@ class ScorePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        // self.view.endEditing(true)
         return scores[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("Puntaje seleccionado: \(scores[row])")
+        delegate?.newScoreWasSelected(scoreName: scores[row])
+        // print("Puntaje seleccionado: \(scores[row])")
     }
+}
+
+protocol ScoreSelectedDelegate: class {
+    func newScoreWasSelected(scoreName: String)
 }

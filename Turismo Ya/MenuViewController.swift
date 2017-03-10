@@ -2,14 +2,14 @@
 //  MenuViewController.swift
 //  Turismo Ya
 //
-//  Created by rimenri on 22/02/2017.
 //  Copyright © 2017 Programación y más. All rights reserved.
 //
 
 import UIKit
 import SDWebImage
 
-class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, ShowPlacesDelegate, OpenMapDelegate {
+class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
+    ShowPlacesDelegate, OpenMapDelegate {
     
     @IBOutlet weak var categoryTableView: UITableView!
     
@@ -60,6 +60,7 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("Ciudad seleccionada: \(cities[row])")
+        self.view.endEditing(true)
     }
     
     func loadCategories() {

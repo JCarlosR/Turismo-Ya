@@ -28,6 +28,7 @@ class PlacesList: NSObject {
     }
 }
 
+
 extension PlacesList: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
