@@ -42,7 +42,7 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     var cities: [City] = []
     
     func loadCities() {
-        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadCountry&idcountry=1").responseJSON { response in
+        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadCiudad").responseJSON { response in
             // print(response.request)  // original URL request
             // print(response.response) // HTTP URL response
             // print(response.data)     // server data
@@ -56,7 +56,7 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
                     city.id = Int16(cityData["idCiudad"]! as! String)!
                     city.name = cityData["Descripcion"]! as! String
                     city.latitude = Float(cityData["Latitud"]! as! String)!
-                    city.longitude = Float(cityData["Longitud"]! as! String)!
+                    city.longitude = Float(cityData["Altitud"]! as! String)!
                     self.cities.append(city)
                     self.pickerViewCity.reloadAllComponents()
                 }
@@ -82,18 +82,21 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print("Ciudad seleccionada: \(cities[row].name)")
+        requestCategoriesFor(cityId: cities[row].id)
         self.view.endEditing(true)
     }
     
     func loadCategories() {
-        
+        /*
         categoryList.addCategory(categoryName: "DÓNDE COMER", categoryImageUrl: "https://agendamariajulia.files.wordpress.com/2017/02/2paco_1433153168_a.jpg?w=256&h=256&crop=1")
         categoryList.addCategory(categoryName: "OCIO", categoryImageUrl: "https://i0.wp.com/hurtadointermedia.com/wp-content/uploads/2016/11/birthday-party.jpg")
         categoryList.addCategory(categoryName: "HOSPEDAJE", categoryImageUrl: "https://pbs.twimg.com/profile_images/3307514251/c499a6d5d7c6e3e52d87248f0dfec7bf.jpeg")
         categoryList.addCategory(categoryName: "BARES", categoryImageUrl: "https://www.coventgarden.london/sites/default/files/styles/cg_place_detail_1_1/public/cg_images/Lima-Floral-Bajo-Bar-Covent-Garden-2.jpg")
         categoryList.addCategory(categoryName: "COMPRAS", categoryImageUrl: "http://coliseo-intl.com/wp-content/uploads/2015/03/compras1.jpg")
+        */
         
-        // categoryTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        requestCategoriesFor(cityId: 1)
+        
         categoryTableView.dataSource = categoryList
         categoryTableView.delegate = categoryList
         
@@ -101,6 +104,26 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         categoryTableView.estimatedRowHeight = 320
     }
     
+    func requestCategoriesFor(cityId: Int16) {
+        self.categoryList.clearCategories()
+        
+        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadCategories&idCiudad=\(cityId)").responseJSON { response in
+            print(response.result)   // result of serialization
+            
+            if let result = response.result.value {
+                let JSON = result as! NSDictionary
+                let categoriesData: NSArray =  JSON["data"]! as! NSArray
+                for categoryData: NSDictionary in categoriesData as! [NSDictionary] {
+                    let category = Category()
+                    category.id = Int16(categoryData["idLinea"]! as! String)!
+                    category.name = categoryData["Descripcion"]! as! String
+                    category.imageUrl = categoryData["Imagen"]! as! String
+                    self.categoryList.addCategory(category: category)
+                    self.categoryTableView.reloadData()
+                }
+            }
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

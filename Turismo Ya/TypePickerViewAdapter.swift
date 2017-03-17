@@ -30,7 +30,7 @@ class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDeleg
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         delegate?.newTypeWasSelected(typeName: types[row])
-        // print("Tipo seleccionado: \(types[row])")
+        print("Tipo seleccionado: \(types[row])")
     }
 }
 

@@ -13,7 +13,7 @@ import UIKit
  "Descripcion":"TRUJILLO",
  "Activo":"1",
  "Latitud":"-8.1117457033549183",
- "Longitud":"-79.028778076171875",
+ "Altitud":"-79.028778076171875",
  "Imagen":null
  }
 */

@@ -47,16 +47,20 @@ class PlacesViewController: UIViewController,
         pickerViewScore.delegate = scorePickerAdapter
         // Bind with the proper textField
         txtScore.inputView = pickerViewScore
+        
+        // Delegates for new selections
+        typePickerAdapter.delegate = self
+        scorePickerAdapter.delegate = self
     }
     
     func newTypeWasSelected(typeName: String) {
         txtType.text = typeName
-        self.view.endEditing(true)
+        self.view.endEditing(false)
     }
     
     func newScoreWasSelected(scoreName: String) {
         txtScore.text = scoreName
-        self.view.endEditing(true)
+        self.view.endEditing(false)
     }
 
     
