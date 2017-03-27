@@ -24,7 +24,7 @@ class CategoryList: NSObject {
 }
 
 protocol ShowPlacesDelegate: class {
-    func didSelectCategory(categoryName: String)
+    func didSelectCategory(categoryId: Int16)
 }
 
 protocol OpenMapDelegate: class {
@@ -69,7 +69,7 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Mostrar detalles de la categoría \(categories[indexPath.row].name)")
-        delegate?.didSelectCategory(categoryName: categories[indexPath.row].name)
+        delegate?.didSelectCategory(categoryId: categories[indexPath.row].id)
     }
     
     

@@ -28,14 +28,25 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         
         loadCategories()
     }
+    
+    var selectedCategoryId: Int16 = 0
         
-    func didSelectCategory(categoryName: String) {
+    func didSelectCategory(categoryId: Int16) {
+        selectedCategoryId = categoryId
         performSegue(withIdentifier: "showPlacesSegue", sender: self)
     }
     
     func openMapView() {
         print("openMapView called")
         performSegue(withIdentifier: "showMapSegue", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPlacesSegue" {
+            if let destinationVC = segue.destination as? PlacesViewController {
+                destinationVC.selectedCategoryId = self.selectedCategoryId
+            }
+        }
     }
     
     
@@ -46,11 +57,10 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
             // print(response.request)  // original URL request
             // print(response.response) // HTTP URL response
             // print(response.data)     // server data
-            print(response.result)   // result of response serialization
+            print("Cities result:", response.result)   // result of response serialization
             
             if let result = response.result.value {
-                let JSON = result as! NSDictionary
-                let citiesData: NSArray =  JSON["data"]! as! NSArray
+                let citiesData: NSArray = result as! NSArray
                 for cityData: NSDictionary in citiesData as! [NSDictionary] {
                     let city = City()
                     city.id = Int16(cityData["idCiudad"]! as! String)!
@@ -87,14 +97,6 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     }
     
     func loadCategories() {
-        /*
-        categoryList.addCategory(categoryName: "DÓNDE COMER", categoryImageUrl: "https://agendamariajulia.files.wordpress.com/2017/02/2paco_1433153168_a.jpg?w=256&h=256&crop=1")
-        categoryList.addCategory(categoryName: "OCIO", categoryImageUrl: "https://i0.wp.com/hurtadointermedia.com/wp-content/uploads/2016/11/birthday-party.jpg")
-        categoryList.addCategory(categoryName: "HOSPEDAJE", categoryImageUrl: "https://pbs.twimg.com/profile_images/3307514251/c499a6d5d7c6e3e52d87248f0dfec7bf.jpeg")
-        categoryList.addCategory(categoryName: "BARES", categoryImageUrl: "https://www.coventgarden.london/sites/default/files/styles/cg_place_detail_1_1/public/cg_images/Lima-Floral-Bajo-Bar-Covent-Garden-2.jpg")
-        categoryList.addCategory(categoryName: "COMPRAS", categoryImageUrl: "http://coliseo-intl.com/wp-content/uploads/2015/03/compras1.jpg")
-        */
-        
         requestCategoriesFor(cityId: 1)
         
         categoryTableView.dataSource = categoryList
@@ -107,12 +109,11 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     func requestCategoriesFor(cityId: Int16) {
         self.categoryList.clearCategories()
         
-        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadCategories&idCiudad=\(cityId)").responseJSON { response in
-            print(response.result)   // result of serialization
+        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadLinea&idCiudad=\(cityId)").responseJSON { response in
+            print("Categories result:", response.result)   // result of serialization
             
             if let result = response.result.value {
-                let JSON = result as! NSDictionary
-                let categoriesData: NSArray =  JSON["data"]! as! NSArray
+                let categoriesData: NSArray =  result as! NSArray
                 for categoryData: NSDictionary in categoriesData as! [NSDictionary] {
                     let category = Category()
                     category.id = Int16(categoryData["idLinea"]! as! String)!

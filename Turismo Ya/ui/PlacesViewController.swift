@@ -20,6 +20,7 @@ class PlacesViewController: UIViewController,
     @IBOutlet weak var txtScore: UITextField!
         
     var placesList = PlacesList()
+    var selectedCategoryId: Int16 = 0
     
     var typePickerAdapter = TypePickerViewAdapter()
     var scorePickerAdapter = ScorePickerViewAdapter()
@@ -65,6 +66,7 @@ class PlacesViewController: UIViewController,
 
     
     func loadPlaces() {
+        print("I have to load the places of the category \(selectedCategoryId)")
         placesList.addPlace(placeName: "Casa Andina")
         placesList.addPlace(placeName: "El Sombrero")
         placesList.addPlace(placeName: "El Mochica")
