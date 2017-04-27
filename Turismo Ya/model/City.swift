@@ -19,7 +19,12 @@ import UIKit
 */
 class City: NSObject {
     var id: Int16 = 0
-    var name: String = ""
+    var _name: String = ""
+    var name: String {
+        get {
+            return Global.parseTextByLang(str: self._name)
+        }
+    }
     var latitude: Float = 0
     var longitude: Float = 0
     var imageUrl: String = ""

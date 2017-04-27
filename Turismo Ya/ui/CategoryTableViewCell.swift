@@ -12,13 +12,14 @@ class CategoryTableViewCell: UITableViewCell {
     
     weak var delegate: OpenMapDelegate?
     
+    var categoryId: Int16 = 0
     @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var categoryImageView: UIImageView!
     
     @IBAction func showCategoryMapPressed(_ sender: Any) {
-        print("Mostrar mapa de \(categoryNameLabel.text)")
+        // print("Mostrar mapa de \(String(describing: categoryNameLabel.text))")
         
-        delegate?.openMapView()
+        delegate?.openMapView(categoryId: self.categoryId)
         // self.performSegue(withIdentifier: "showMapSegue", sender: self)
     }
     

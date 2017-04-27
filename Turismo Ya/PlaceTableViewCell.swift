@@ -13,6 +13,8 @@ class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var placeImageView: UIImageView!
     
     @IBOutlet weak var placeNameLabel: UILabel!
+        
+    @IBOutlet weak var placeDescriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

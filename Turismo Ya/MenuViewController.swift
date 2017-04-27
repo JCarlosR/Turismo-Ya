@@ -36,8 +36,9 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         performSegue(withIdentifier: "showPlacesSegue", sender: self)
     }
     
-    func openMapView() {
-        print("openMapView called")
+    func openMapView(categoryId: Int16) {
+        // print("openMapView called")
+        selectedCategoryId = categoryId
         performSegue(withIdentifier: "showMapSegue", sender: self)
     }
     
@@ -46,25 +47,28 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
             if let destinationVC = segue.destination as? PlacesViewController {
                 destinationVC.selectedCategoryId = self.selectedCategoryId
             }
+        } else if segue.identifier == "showMapSegue" {
+            if let destinationVC = segue.destination as? MyGoogleMapController {
+                destinationVC.selectedCategoryId = self.selectedCategoryId
+            }
         }
     }
+    
     
     
     var cities: [City] = []
     
     func loadCities() {
-        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadCiudad").responseJSON { response in
-            // print(response.request)  // original URL request
-            // print(response.response) // HTTP URL response
-            // print(response.data)     // server data
-            print("Cities result:", response.result)   // result of response serialization
+        Alamofire.request("http://52.170.87.192:50/premiun/modules/aperturar.php?task=loadCiudad").responseJSON { response in
+            
+            print("Cities result:", response.result)
             
             if let result = response.result.value {
                 let citiesData: NSArray = result as! NSArray
                 for cityData: NSDictionary in citiesData as! [NSDictionary] {
                     let city = City()
                     city.id = Int16(cityData["idCiudad"]! as! String)!
-                    city.name = cityData["Descripcion"]! as! String
+                    city._name = cityData["Descripcion"]! as! String
                     city.latitude = Float(cityData["Latitud"]! as! String)!
                     city.longitude = Float(cityData["Altitud"]! as! String)!
                     self.cities.append(city)
@@ -109,7 +113,7 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     func requestCategoriesFor(cityId: Int16) {
         self.categoryList.clearCategories()
         
-        Alamofire.request("http://52.174.147.194:50/premiun/modules/aperturar.php?task=loadLinea&idCiudad=\(cityId)").responseJSON { response in
+        Alamofire.request("http://52.170.87.192:50/premiun/modules/aperturar.php?task=loadLinea&idCiudad=\(cityId)").responseJSON { response in
             print("Categories result:", response.result)   // result of serialization
             
             if let result = response.result.value {
@@ -117,7 +121,7 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
                 for categoryData: NSDictionary in categoriesData as! [NSDictionary] {
                     let category = Category()
                     category.id = Int16(categoryData["idLinea"]! as! String)!
-                    category.name = categoryData["Descripcion"]! as! String
+                    category._name = categoryData["Descripcion"]! as! String
                     category.imageUrl = categoryData["Imagen"]! as! String
                     self.categoryList.addCategory(category: category)
                     self.categoryTableView.reloadData()

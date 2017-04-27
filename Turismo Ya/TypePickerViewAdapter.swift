@@ -12,7 +12,15 @@ class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDeleg
     
     weak var delegate: TypeSelectedDelegate?
     
-    var types: [String] = ["CARNES", "PESCADOS Y MARISCOS", "VEGETARIANA", "POLLOS A LA BRASA", "COMIDA RÁPIDA"]
+    var types: [SubCategory] = []
+    
+    func addType(type: SubCategory) {
+        types.append(type)
+    }
+    
+    func getFirstTypeText() -> String {
+        return types[0].name
+    }
     
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -24,17 +32,16 @@ class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        // self.view.endEditing(true)
-        return types[row]
+        return types[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate?.newTypeWasSelected(typeName: types[row])
-        print("Tipo seleccionado: \(types[row])")
+        delegate?.newTypeWasSelected(typeName: types[row].name, typeId: types[row].id)
+        // print("Tipo seleccionado: \(types[row])")
     }
 }
 
 
 protocol TypeSelectedDelegate: class {
-    func newTypeWasSelected(typeName: String)
+    func newTypeWasSelected(typeName: String, typeId: Int16)
 }

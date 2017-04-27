@@ -28,7 +28,7 @@ protocol ShowPlacesDelegate: class {
 }
 
 protocol OpenMapDelegate: class {
-    func openMapView()
+    func openMapView(categoryId: Int16)
 }
 
 extension CategoryList: UITableViewDataSource, UITableViewDelegate {
@@ -50,10 +50,13 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
         
         // cell.textLabel!.text = categoryName
         // cell.categoryImageView.image = category.image
-        let imageUrl = URL(string: "http://52.174.147.194:50/premiun/images/categories/\(category.imageUrl)")
-        cell.categoryImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "pajaro azul"), options: SDWebImageOptions.progressiveDownload)
+        let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/categories/\(category.imageUrl)")
+        cell.categoryImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "logo.png"), options: SDWebImageOptions.progressiveDownload)
         cell.categoryNameLabel.text = category.name
         cell.delegate = delegate as! OpenMapDelegate? // the same instance implements both protocols
+        
+        // metadata
+        cell.categoryId = category.id
         
         return cell
         

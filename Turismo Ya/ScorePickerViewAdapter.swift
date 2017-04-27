@@ -12,8 +12,11 @@ class ScorePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDele
     
     weak var delegate: ScoreSelectedDelegate?
     
-    var scores: [String] = ["5 PUNTOS", "4 PUNTOS O MÁS", "3 PUNTOS O MÁS", "2 PUNTOS O MÁS", "TODOS LOS LUGARES"]
+    var scores: [Score] = []
     
+    func setScoreOptions(scoreOptions: [Score]) {
+        scores = scoreOptions
+    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -24,15 +27,15 @@ class ScorePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return scores[row]
+        return scores[row].name
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate?.newScoreWasSelected(scoreName: scores[row])
+        delegate?.newScoreWasSelected(scoreId: scores[row].id, scoreName: scores[row].name)
         // print("Puntaje seleccionado: \(scores[row])")
     }
 }
 
 protocol ScoreSelectedDelegate: class {
-    func newScoreWasSelected(scoreName: String)
+    func newScoreWasSelected(scoreId: Int16, scoreName: String)
 }
