@@ -13,19 +13,23 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     ShowPlacesDelegate, OpenMapDelegate {
     
     @IBOutlet weak var categoryTableView: UITableView!
-    
     var categoryList = CategoryList()
     
     @IBOutlet weak var pickerViewCity: UIPickerView!
     
+    @IBOutlet weak var menuItem: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // sidebar menu
+        if revealViewController() != nil {
+            menuItem.target = revealViewController()
+            menuItem.action = #selector(SWRevealViewController.revealToggle(_:))
+        }
+        
         categoryList.delegate = self
-        
         loadCities()
-        
         loadCategories()
     }
     
