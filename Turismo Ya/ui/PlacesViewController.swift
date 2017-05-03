@@ -29,11 +29,13 @@ class PlacesViewController: UIViewController,
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = Global.titlePlaces
+        
         // listen for place selection
         placesList.delegate = self
         
+        // load data
         loadTypesAndScores()
-        
         loadPlaces()
     }
     

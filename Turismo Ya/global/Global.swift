@@ -28,6 +28,45 @@ class Global: NSObject {
     }
     
     
+    // ViewController titles & labels
+    static var titleCategories: String {
+        get {
+            return parseTextByLang(str: "Categorías|Categories")
+        }
+    }
+    static var titlePlaces: String {
+        get {
+            return parseTextByLang(str: "Lugares|Places")
+        }
+    }
+    static var labelShowMap: String {
+        get {
+            return parseTextByLang(str: "Ver mapa|Show map")
+        }
+    }
+    static var labelHowArrive: String {
+        get {
+            return parseTextByLang(str: "Cómo llegar|How to arrive")
+        }
+    }
+    static var labelLocation: String {
+        get {
+            return parseTextByLang(str: "Ubicación|Location")
+        }
+    }
+    static var labelFavorite: String {
+        get {
+            return parseTextByLang(str: "Favorito|Favorite")
+        }
+    }
+    static var labelStars: String {
+        get {
+            return parseTextByLang(str: "estrellas|stars")
+        }
+    }
+    
+    
+    
     // Translation to EN / ES
     
     static var lang: String = "es"
@@ -35,10 +74,15 @@ class Global: NSObject {
     static func parseTextByLang(str: String) -> String {
 
         let textArray = str.components(separatedBy: "|")
-        if lang == "es" {
-            return textArray[0]
+        
+        if textArray.count > 1 {
+            if lang == "es" {
+                return textArray[0]
+            } else {
+                return textArray[1]
+            }
         } else {
-            return textArray[1]
+            return str
         }
         
     }

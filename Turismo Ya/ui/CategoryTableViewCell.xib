@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,17 +20,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-b2-AKh">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-b2-AKh">
+                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="OXa-d8-ie7"/>
+                            <constraint firstAttribute="width" constant="125" id="nNj-e4-r00"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJO-IQ-7fA">
-                        <rect key="frame" x="150" y="49.5" width="120" height="21"/>
+                        <rect key="frame" x="133" y="52" width="179" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sec-w0-HKp">
-                        <rect key="frame" x="150" y="84" width="120" height="30"/>
+                        <rect key="frame" x="190" y="87" width="65" height="30"/>
                         <state key="normal" title="Ver mapa"/>
                         <connections>
                             <action selector="showCategoryMapPressed:" destination="KGk-i7-Jjw" eventType="touchDown" id="LFe-0G-s45"/>
@@ -39,20 +43,21 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="IaB-b2-AKh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="3Dp-aM-2vw"/>
-                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ANW-gy-FCE"/>
                     <constraint firstAttribute="bottomMargin" secondItem="IaB-b2-AKh" secondAttribute="bottom" constant="-8" id="Bc5-QZ-Z76"/>
-                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="leading" secondItem="IaB-b2-AKh" secondAttribute="trailing" constant="30" id="F6y-Yz-kY5"/>
-                    <constraint firstItem="Sec-w0-HKp" firstAttribute="width" secondItem="NJO-IQ-7fA" secondAttribute="width" id="Rsr-NI-Aq8"/>
-                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="leading" secondItem="IaB-b2-AKh" secondAttribute="trailing" constant="30" id="XKf-2t-xET"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="NJO-IQ-7fA" secondAttribute="trailing" constant="42" id="boQ-y7-uwJ"/>
-                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="width" secondItem="IaB-b2-AKh" secondAttribute="width" id="cwp-Qd-eQt"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Sec-w0-HKp" secondAttribute="trailing" constant="42" id="jW1-IF-XYN"/>
+                    <constraint firstItem="IaB-b2-AKh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KmZ-Nb-uA6"/>
+                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="TSj-eL-aoa"/>
+                    <constraint firstItem="IaB-b2-AKh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="b8l-Kc-2si"/>
+                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="leading" secondItem="IaB-b2-AKh" secondAttribute="trailing" constant="8" symbolic="YES" id="eT7-m2-BOn"/>
+                    <constraint firstAttribute="bottom" secondItem="IaB-b2-AKh" secondAttribute="bottom" id="hkM-4o-jUP"/>
+                    <constraint firstItem="Sec-w0-HKp" firstAttribute="top" secondItem="NJO-IQ-7fA" secondAttribute="bottom" constant="14" id="k0p-ya-doo"/>
                     <constraint firstItem="IaB-b2-AKh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="pRc-AN-kUC"/>
-                    <constraint firstItem="Sec-w0-HKp" firstAttribute="top" secondItem="NJO-IQ-7fA" secondAttribute="bottom" constant="14" id="tXs-az-ScU"/>
+                    <constraint firstItem="Sec-w0-HKp" firstAttribute="centerX" secondItem="NJO-IQ-7fA" secondAttribute="centerX" id="sY0-Zh-mVt"/>
+                    <constraint firstItem="NJO-IQ-7fA" firstAttribute="centerY" secondItem="IaB-b2-AKh" secondAttribute="centerY" id="t8D-Bd-6Tc"/>
                     <constraint firstItem="IaB-b2-AKh" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:1" id="wyM-cb-Wfu"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="btnShowMap" destination="Sec-w0-HKp" id="QCr-sg-Kdj"/>
                 <outlet property="categoryImageView" destination="IaB-b2-AKh" id="mEY-aE-Oxi"/>
                 <outlet property="categoryNameLabel" destination="NJO-IQ-7fA" id="6wU-Pd-y8p"/>
             </connections>

@@ -23,5 +23,10 @@ target 'Turismo Ya' do
   pod 'SDWebImage', '~>3.8'
 
   pod 'Alamofire', '~> 4.4'
+
+  source 'https://github.com/CocoaPods/Specs.git'
+  platform :ios, '8.0'
+  use_frameworks!
+  pod 'SideMenu'
   
 end

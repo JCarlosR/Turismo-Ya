@@ -17,20 +17,31 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     @IBOutlet weak var pickerViewCity: UIPickerView!
     
+
     @IBOutlet weak var menuItem: UIBarButtonItem!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // sidebar menu
-        if revealViewController() != nil {
-            menuItem.target = revealViewController()
-            menuItem.action = #selector(SWRevealViewController.revealToggle(_:))
-        }
-        
+        self.automaticallyAdjustsScrollViewInsets = false
+        setTitle()
+                
         categoryList.delegate = self
         loadCities()
         loadCategories()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(MenuViewController.callbackUpdatedLanguage(notification:)), name: Notification.Name("updatedLanguage"), object: nil)
+    }
+    
+    func callbackUpdatedLanguage(notification: Notification){
+        loadCities()
+        loadCategories()
+        setTitle()
+    }
+    
+    func setTitle() {
+        self.navigationItem.title = Global.titleCategories
     }
     
     var selectedCategoryId: Int16 = 0

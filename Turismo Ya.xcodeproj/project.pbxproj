@@ -30,7 +30,8 @@
 		D22BC8861EA964A100E9C1DB /* phone-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22BC8831EA964A100E9C1DB /* phone-icon.png */; };
 		D22BC8871EA964A100E9C1DB /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22BC8841EA964A100E9C1DB /* home-icon.png */; };
 		D22BC8881EA964A100E9C1DB /* like-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22BC8851EA964A100E9C1DB /* like-icon.png */; };
-		D23D93281EB77CFC008844A8 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23D93271EB77CFC008844A8 /* SWRevealViewController.m */; };
+		D23D932B1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D932A1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift */; };
+		D23D932D1EB95495008844A8 /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23D932C1EB95495008844A8 /* email-icon.png */; };
 		D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F0461E5E01CA00CFFDEC /* CategoryList.swift */; };
 		D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */; };
 		D248F04D1E5E0D6800CFFDEC /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */; };
@@ -104,8 +105,8 @@
 		D22BC8831EA964A100E9C1DB /* phone-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "phone-icon.png"; path = "icons/phone-icon.png"; sourceTree = "<group>"; };
 		D22BC8841EA964A100E9C1DB /* home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "home-icon.png"; path = "icons/home-icon.png"; sourceTree = "<group>"; };
 		D22BC8851EA964A100E9C1DB /* like-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "like-icon.png"; path = "icons/like-icon.png"; sourceTree = "<group>"; };
-		D23D93261EB77CFC008844A8 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		D23D93271EB77CFC008844A8 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		D23D932A1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuViewControllerTableViewController.swift; path = menu/SideMenuViewControllerTableViewController.swift; sourceTree = "<group>"; };
+		D23D932C1EB95495008844A8 /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "email-icon.png"; path = "icons/email-icon.png"; sourceTree = "<group>"; };
 		D248F0461E5E01CA00CFFDEC /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryList.swift; path = model/CategoryList.swift; sourceTree = "<group>"; };
 		D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = ui/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = ui/CategoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -272,6 +273,7 @@
 		D22BC87A1EA95FDD00E9C1DB /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D23D932C1EB95495008844A8 /* email-icon.png */,
 				D22BC8831EA964A100E9C1DB /* phone-icon.png */,
 				D22BC8841EA964A100E9C1DB /* home-icon.png */,
 				D22BC8851EA964A100E9C1DB /* like-icon.png */,
@@ -286,8 +288,7 @@
 		D23D93251EB77CE9008844A8 /* menu */ = {
 			isa = PBXGroup;
 			children = (
-				D23D93261EB77CFC008844A8 /* SWRevealViewController.h */,
-				D23D93271EB77CFC008844A8 /* SWRevealViewController.m */,
+				D23D932A1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift */,
 			);
 			name = menu;
 			sourceTree = "<group>";
@@ -484,6 +485,7 @@
 				D285691E1E72044200F630F4 /* logo.png in Resources */,
 				D22BC8821EA9608200E9C1DB /* share-128.png in Resources */,
 				D22BC8881EA964A100E9C1DB /* like-icon.png in Resources */,
+				D23D932D1EB95495008844A8 /* email-icon.png in Resources */,
 				D22BC8871EA964A100E9C1DB /* home-icon.png in Resources */,
 				D22BC8801EA9608200E9C1DB /* star-off.png in Resources */,
 				D21E198D1E5A628400B24687 /* Main.storyboard in Resources */,
@@ -661,7 +663,6 @@
 				D28569251E73509700F630F4 /* City.swift in Sources */,
 				D2D45D581E69F39D00CB574A /* PlacesList.swift in Sources */,
 				D2D45D561E69F34F00CB574A /* PlacesViewController.swift in Sources */,
-				D23D93281EB77CFC008844A8 /* SWRevealViewController.m in Sources */,
 				D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */,
 				D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */,
 				D28262AA1E7C932400282698 /* Category.swift in Sources */,
@@ -669,6 +670,7 @@
 				D2D45D5A1E6A13E500CB574A /* TypePickerViewAdapter.swift in Sources */,
 				D28569221E727BCF00F630F4 /* LoginViewController.swift in Sources */,
 				D22BC8791EA6ED4A00E9C1DB /* PlaceInfoViewController.swift in Sources */,
+				D23D932B1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift in Sources */,
 				D2A2BA8A1EB63B4400FD7F15 /* Country.swift in Sources */,
 				D22BC8741EA3FCEE00E9C1DB /* Place.swift in Sources */,
 				D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */,

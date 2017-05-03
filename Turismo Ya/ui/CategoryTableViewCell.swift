@@ -16,6 +16,10 @@ class CategoryTableViewCell: UITableViewCell {
     @IBOutlet weak var categoryNameLabel: UILabel!
     @IBOutlet weak var categoryImageView: UIImageView!
     
+
+    
+    @IBOutlet weak var btnShowMap: UIButton!
+    
     @IBAction func showCategoryMapPressed(_ sender: Any) {
         // print("Mostrar mapa de \(String(describing: categoryNameLabel.text))")
         
@@ -26,6 +30,8 @@ class CategoryTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        btnShowMap.setTitle(Global.labelShowMap, for: .normal)
     }
     
     

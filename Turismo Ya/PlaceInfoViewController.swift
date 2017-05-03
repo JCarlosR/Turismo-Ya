@@ -15,6 +15,11 @@ class PlaceInfoViewController: UIViewController {
     @IBOutlet weak var topBtnLocation: UIImageView!
     @IBOutlet weak var topBtnStar: UIImageView!
     
+    
+    @IBOutlet weak var topLabelHowArrive: UILabel!
+    @IBOutlet weak var topLabelLocation: UILabel!
+    @IBOutlet weak var topLabelFavorite: UILabel!
+    
     @IBOutlet weak var imageViewPlace: UIImageView!
     @IBOutlet weak var labelTitlePlace: UILabel!
     @IBOutlet weak var labelDescriptionPlace: UILabel!
@@ -40,7 +45,13 @@ class PlaceInfoViewController: UIViewController {
             
             labelAddress.text = place.address
             labelPhone.text = place.telefono
-            labelStars.text = "\(place.idValoracion) estrellas"
+            labelStars.text = "\(place.idValoracion) \(Global.labelStars)"
+            
+            
+            // button text translation
+            topLabelHowArrive.text = Global.labelHowArrive
+            topLabelLocation.text = Global.labelLocation
+            topLabelFavorite.text = Global.labelFavorite
             
             
             // click events
