@@ -32,11 +32,23 @@
 		D22BC8881EA964A100E9C1DB /* like-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22BC8851EA964A100E9C1DB /* like-icon.png */; };
 		D23D932B1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D932A1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift */; };
 		D23D932D1EB95495008844A8 /* email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23D932C1EB95495008844A8 /* email-icon.png */; };
+		D23D93301EBA75E6008844A8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D932F1EBA75E6008844A8 /* FavoritesViewController.swift */; };
+		D23D93321EBA96BE008844A8 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D93311EBA96BE008844A8 /* Favorite.swift */; };
+		D23D93341EBBD269008844A8 /* Qualification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D93331EBBD269008844A8 /* Qualification.swift */; };
+		D23D93371EBD43E7008844A8 /* CityPickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D93361EBD43E7008844A8 /* CityPickerViewAdapter.swift */; };
+		D23D93391EBD4E8E008844A8 /* exit-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D23D93381EBD4E8E008844A8 /* exit-icon.png */; };
+		D23D933B1EBD6F9A008844A8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D933A1EBD6F9A008844A8 /* Comment.swift */; };
+		D23D933D1EBD70EA008844A8 /* CommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D933C1EBD70EA008844A8 /* CommentList.swift */; };
+		D23D93401EBD7330008844A8 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23D933E1EBD7330008844A8 /* CommentTableViewCell.swift */; };
+		D23D93411EBD7330008844A8 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D23D933F1EBD7330008844A8 /* CommentTableViewCell.xib */; };
 		D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F0461E5E01CA00CFFDEC /* CategoryList.swift */; };
 		D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */; };
 		D248F04D1E5E0D6800CFFDEC /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */; };
 		D28262AA1E7C932400282698 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28262A91E7C932400282698 /* Category.swift */; };
 		D28262AC1E89CB7900282698 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28262AB1E89CB7900282698 /* SubCategory.swift */; };
+		D2830A9E1EC0BB0C00EA264E /* p_trujillo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2830A9B1EC0BB0C00EA264E /* p_trujillo.jpg */; };
+		D2830A9F1EC0BB0C00EA264E /* p_pacasmayo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2830A9C1EC0BB0C00EA264E /* p_pacasmayo.jpg */; };
+		D2830AA01EC0BB0C00EA264E /* p_julcan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2830A9D1EC0BB0C00EA264E /* p_julcan.jpg */; };
 		D285691E1E72044200F630F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D285691D1E72044200F630F4 /* logo.png */; };
 		D28569201E7216A600F630F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285691F1E7216A600F630F4 /* RegisterViewController.swift */; };
 		D28569221E727BCF00F630F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28569211E727BCF00F630F4 /* LoginViewController.swift */; };
@@ -107,11 +119,23 @@
 		D22BC8851EA964A100E9C1DB /* like-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "like-icon.png"; path = "icons/like-icon.png"; sourceTree = "<group>"; };
 		D23D932A1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuViewControllerTableViewController.swift; path = menu/SideMenuViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		D23D932C1EB95495008844A8 /* email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "email-icon.png"; path = "icons/email-icon.png"; sourceTree = "<group>"; };
+		D23D932F1EBA75E6008844A8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		D23D93311EBA96BE008844A8 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Favorite.swift; path = model/Favorite.swift; sourceTree = "<group>"; };
+		D23D93331EBBD269008844A8 /* Qualification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Qualification.swift; path = model/Qualification.swift; sourceTree = "<group>"; };
+		D23D93361EBD43E7008844A8 /* CityPickerViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityPickerViewAdapter.swift; sourceTree = "<group>"; };
+		D23D93381EBD4E8E008844A8 /* exit-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "exit-icon.png"; path = "icons/exit-icon.png"; sourceTree = "<group>"; };
+		D23D933A1EBD6F9A008844A8 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = model/Comment.swift; sourceTree = "<group>"; };
+		D23D933C1EBD70EA008844A8 /* CommentList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentList.swift; sourceTree = "<group>"; };
+		D23D933E1EBD7330008844A8 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		D23D933F1EBD7330008844A8 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		D248F0461E5E01CA00CFFDEC /* CategoryList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryList.swift; path = model/CategoryList.swift; sourceTree = "<group>"; };
 		D248F04A1E5E0D6800CFFDEC /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = ui/CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		D248F04B1E5E0D6800CFFDEC /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryTableViewCell.xib; path = ui/CategoryTableViewCell.xib; sourceTree = "<group>"; };
 		D28262A91E7C932400282698 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Category.swift; path = model/Category.swift; sourceTree = "<group>"; };
 		D28262AB1E89CB7900282698 /* SubCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubCategory.swift; path = model/SubCategory.swift; sourceTree = "<group>"; };
+		D2830A9B1EC0BB0C00EA264E /* p_trujillo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p_trujillo.jpg; path = slider/p_trujillo.jpg; sourceTree = "<group>"; };
+		D2830A9C1EC0BB0C00EA264E /* p_pacasmayo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p_pacasmayo.jpg; path = slider/p_pacasmayo.jpg; sourceTree = "<group>"; };
+		D2830A9D1EC0BB0C00EA264E /* p_julcan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p_julcan.jpg; path = slider/p_julcan.jpg; sourceTree = "<group>"; };
 		D285691D1E72044200F630F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		D285691F1E7216A600F630F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D28569211E727BCF00F630F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +239,9 @@
 		D21E19861E5A628400B24687 /* Turismo Ya */ = {
 			isa = PBXGroup;
 			children = (
+				D2830A9A1EC0BAE900EA264E /* slider */,
+				D23D93351EBD43A5008844A8 /* cities */,
+				D23D932E1EBA75BB008844A8 /* favorites */,
 				D23D93251EB77CE9008844A8 /* menu */,
 				D2A2BA861EB63A9100FD7F15 /* country */,
 				D22BC87A1EA95FDD00E9C1DB /* icons */,
@@ -266,6 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				D22BC8781EA6ED4A00E9C1DB /* PlaceInfoViewController.swift */,
+				D23D933C1EBD70EA008844A8 /* CommentList.swift */,
+				D23D933E1EBD7330008844A8 /* CommentTableViewCell.swift */,
+				D23D933F1EBD7330008844A8 /* CommentTableViewCell.xib */,
 			);
 			name = "place info";
 			sourceTree = "<group>";
@@ -273,6 +303,7 @@
 		D22BC87A1EA95FDD00E9C1DB /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D23D93381EBD4E8E008844A8 /* exit-icon.png */,
 				D23D932C1EB95495008844A8 /* email-icon.png */,
 				D22BC8831EA964A100E9C1DB /* phone-icon.png */,
 				D22BC8841EA964A100E9C1DB /* home-icon.png */,
@@ -293,6 +324,32 @@
 			name = menu;
 			sourceTree = "<group>";
 		};
+		D23D932E1EBA75BB008844A8 /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				D23D932F1EBA75E6008844A8 /* FavoritesViewController.swift */,
+			);
+			name = favorites;
+			sourceTree = "<group>";
+		};
+		D23D93351EBD43A5008844A8 /* cities */ = {
+			isa = PBXGroup;
+			children = (
+				D23D93361EBD43E7008844A8 /* CityPickerViewAdapter.swift */,
+			);
+			name = cities;
+			sourceTree = "<group>";
+		};
+		D2830A9A1EC0BAE900EA264E /* slider */ = {
+			isa = PBXGroup;
+			children = (
+				D2830A9B1EC0BB0C00EA264E /* p_trujillo.jpg */,
+				D2830A9C1EC0BB0C00EA264E /* p_pacasmayo.jpg */,
+				D2830A9D1EC0BB0C00EA264E /* p_julcan.jpg */,
+			);
+			name = slider;
+			sourceTree = "<group>";
+		};
 		D28569231E73507B00F630F4 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +360,9 @@
 				D22BC8731EA3FCEE00E9C1DB /* Place.swift */,
 				D22BC8751EA4413900E9C1DB /* Score.swift */,
 				D2A2BA8B1EB667EF00FD7F15 /* User.swift */,
+				D23D93311EBA96BE008844A8 /* Favorite.swift */,
+				D23D93331EBBD269008844A8 /* Qualification.swift */,
+				D23D933A1EBD6F9A008844A8 /* Comment.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -475,8 +535,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23D93391EBD4E8E008844A8 /* exit-icon.png in Resources */,
 				D2107D1F1E5D404C0005243E /* intro.mp4 in Resources */,
 				D22BC8861EA964A100E9C1DB /* phone-icon.png in Resources */,
+				D2830A9E1EC0BB0C00EA264E /* p_trujillo.jpg in Resources */,
 				D248F04D1E5E0D6800CFFDEC /* CategoryTableViewCell.xib in Resources */,
 				D22BC8811EA9608200E9C1DB /* gps-128.png in Resources */,
 				D22BC87F1EA9608200E9C1DB /* star-on.png in Resources */,
@@ -484,10 +546,13 @@
 				D21E198F1E5A628400B24687 /* Assets.xcassets in Resources */,
 				D285691E1E72044200F630F4 /* logo.png in Resources */,
 				D22BC8821EA9608200E9C1DB /* share-128.png in Resources */,
+				D2830AA01EC0BB0C00EA264E /* p_julcan.jpg in Resources */,
 				D22BC8881EA964A100E9C1DB /* like-icon.png in Resources */,
+				D23D93411EBD7330008844A8 /* CommentTableViewCell.xib in Resources */,
 				D23D932D1EB95495008844A8 /* email-icon.png in Resources */,
 				D22BC8871EA964A100E9C1DB /* home-icon.png in Resources */,
 				D22BC8801EA9608200E9C1DB /* star-off.png in Resources */,
+				D2830A9F1EC0BB0C00EA264E /* p_pacasmayo.jpg in Resources */,
 				D21E198D1E5A628400B24687 /* Main.storyboard in Resources */,
 				D2D45D541E69F19100CB574A /* PlaceTableViewCell.xib in Resources */,
 			);
@@ -657,17 +722,23 @@
 				D2D45D4C1E667D0600CB574A /* MyGoogleMapController.swift in Sources */,
 				D28569201E7216A600F630F4 /* RegisterViewController.swift in Sources */,
 				D28262AC1E89CB7900282698 /* SubCategory.swift in Sources */,
+				D23D93341EBBD269008844A8 /* Qualification.swift in Sources */,
 				D2A2BA881EB63AB200FD7F15 /* CountryPickerViewAdapter.swift in Sources */,
 				D21E198A1E5A628400B24687 /* MainViewController.swift in Sources */,
 				D2D45D531E69F19100CB574A /* PlaceTableViewCell.swift in Sources */,
+				D23D93301EBA75E6008844A8 /* FavoritesViewController.swift in Sources */,
 				D28569251E73509700F630F4 /* City.swift in Sources */,
+				D23D933B1EBD6F9A008844A8 /* Comment.swift in Sources */,
 				D2D45D581E69F39D00CB574A /* PlacesList.swift in Sources */,
 				D2D45D561E69F34F00CB574A /* PlacesViewController.swift in Sources */,
 				D21E19881E5A628400B24687 /* AppDelegate.swift in Sources */,
 				D2107D261E5DC52A0005243E /* MenuViewController.swift in Sources */,
 				D28262AA1E7C932400282698 /* Category.swift in Sources */,
+				D23D93321EBA96BE008844A8 /* Favorite.swift in Sources */,
+				D23D93371EBD43E7008844A8 /* CityPickerViewAdapter.swift in Sources */,
 				D22BC8761EA4413900E9C1DB /* Score.swift in Sources */,
 				D2D45D5A1E6A13E500CB574A /* TypePickerViewAdapter.swift in Sources */,
+				D23D93401EBD7330008844A8 /* CommentTableViewCell.swift in Sources */,
 				D28569221E727BCF00F630F4 /* LoginViewController.swift in Sources */,
 				D22BC8791EA6ED4A00E9C1DB /* PlaceInfoViewController.swift in Sources */,
 				D23D932B1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift in Sources */,
@@ -676,6 +747,7 @@
 				D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */,
 				D22BC8721EA3F0B200E9C1DB /* Global.swift in Sources */,
 				D2A2BA8C1EB667EF00FD7F15 /* User.swift in Sources */,
+				D23D933D1EBD70EA008844A8 /* CommentList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

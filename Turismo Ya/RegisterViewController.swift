@@ -69,8 +69,8 @@ class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPicke
         countryPickerView.delegate = countryPickerViewAdapter
         // Bind with the proper textField
         txtCountry.inputView = countryPickerView
-        // Delegate for the selection event
-        countryPickerView.delegate = self
+        // To propagate the selection event
+        countryPickerViewAdapter.delegate = self
     }
     
     @IBAction func btnConfirmRegisterPressed(_ sender: UIButton) {

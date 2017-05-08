@@ -21,7 +21,7 @@ class MyGoogleMapController: UIViewController {
     var longitudeCenter: Double = -79.02309
     
     var places: [Place] = []
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         

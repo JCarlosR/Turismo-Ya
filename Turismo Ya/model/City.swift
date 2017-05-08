@@ -17,7 +17,9 @@ import UIKit
  "Imagen":null
  }
 */
-class City: NSObject {
+import RealmSwift
+
+class City: Object {
     var id: Int16 = 0
     var _name: String = ""
     var name: String {

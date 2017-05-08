@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Turismo Ya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -20,6 +30,16 @@
 			<false/>
 		</dict>
 		<key>Pods-Turismo YaUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,12 +57,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>092975F8EDCB13B4E53C3C24CA2368F7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2709FD18A18EEAFD22E5E138F6B73164</key>
+		<key>25522C3AC505FB7045D6C175D7C8CEC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +67,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>548C13F3011AFAF8A67AA10E0149EEA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B9A3B94EF731EC2B6D2D00AD9863601</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>70D8335224B53623CF921021DF95B09A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>854A358F694791FC141F75E15F82BB64</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +92,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A744A1A445228A196B019CC5D9A74896</key>
+		<key>9193C448FEE4FCEED33372690BAFEB67</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A957339C3681AE0A2AAA589F8952D446</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1883A945C236CDCF166DE672D76F89C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

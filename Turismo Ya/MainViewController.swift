@@ -9,21 +9,39 @@
 import UIKit
 import AVKit
 import AVFoundation
+import ImageSlideshow
 
 class MainViewController: UIViewController {
     
+    /*
     // add transparency using a programatically created view
     var blackOverlay: UIView!
     
     var player: AVPlayer?
     let videoURL: NSURL = Bundle.main.url(forResource: "intro", withExtension: "mp4")! as NSURL
+    */
+    
+    @IBOutlet weak var slideshow: ImageSlideshow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupVideoBackground()
-    }
+        configureSlideshow()
         
+        // un-comment to show the video background again
+        // setupVideoBackground()
+    }
+    
+    func configureSlideshow() {
+        slideshow.setImageInputs([
+            ImageSource(image: UIImage(named: "p_trujillo.jpg")!),
+            ImageSource(image: UIImage(named: "p_pacasmayo.jpg")!),
+            ImageSource(image: UIImage(named: "p_julcan.jpg")!),
+            // AlamofireSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080"),
+        ])
+    }
+    
+    /*
     func setupVideoBackground() {
         // Adds a black overlay to the looped video in question
         blackOverlay = UIView(frame: UIScreen.main.bounds)
@@ -60,7 +78,9 @@ class MainViewController: UIViewController {
     func playerItemDidReachEnd() {
         player!.seek(to: kCMTimeZero)
     }
-    
+    */
+ 
+ 
     @IBAction func btnLoginPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "enterToLoginSegue", sender: self)
     }

@@ -8,16 +8,19 @@
 import UIKit
 import SDWebImage
 import Alamofire
+import RealmSwift
 
-class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate,
-    ShowPlacesDelegate, OpenMapDelegate {
+class MenuViewController: UIViewController, ShowPlacesDelegate, OpenMapDelegate, CitySelectedDelegate {
     
     @IBOutlet weak var categoryTableView: UITableView!
     var categoryList = CategoryList()
     
-    @IBOutlet weak var pickerViewCity: UIPickerView!
     
-
+    @IBOutlet weak var txtCity: UITextField!
+    var cityPickerView: UIPickerView! = UIPickerView()
+    var cityPickerViewAdapter = CityPickerViewAdapter()
+    @IBOutlet weak var labelCity: UILabel!
+    
     @IBOutlet weak var menuItem: UIBarButtonItem!
     
     
@@ -25,7 +28,7 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         super.viewDidLoad()
 
         self.automaticallyAdjustsScrollViewInsets = false
-        setTitle()
+        setTitleAndLabel()
                 
         categoryList.delegate = self
         loadCities()
@@ -37,11 +40,12 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     func callbackUpdatedLanguage(notification: Notification){
         loadCities()
         loadCategories()
-        setTitle()
+        setTitleAndLabel()
     }
     
-    func setTitle() {
+    func setTitleAndLabel() {
         self.navigationItem.title = Global.titleCategories
+        self.labelCity.text = Global.labelCity
     }
     
     var selectedCategoryId: Int16 = 0
@@ -71,12 +75,20 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     
     
-    var cities: [City] = []
+    func newCityWasSelected(cityName: String, cityId: Int16) {
+        self.txtCity.text = cityName
+        requestCategoriesFor(cityId: cityId)
+        
+        // set the selected option and hide the picker view
+        self.view.endEditing(false)
+    }
     
     func loadCities() {
-        Alamofire.request("http://52.170.87.192:50/premiun/modules/aperturar.php?task=loadCiudad").responseJSON { response in
+        
+        
+        Alamofire.request(Global.urlCities).responseJSON { response in
             
-            print("Cities result:", response.result)
+            // print("Cities result:", response.result)
             
             if let result = response.result.value {
                 let citiesData: NSArray = result as! NSArray
@@ -86,37 +98,39 @@ class MenuViewController: UIViewController, UIPickerViewDataSource, UIPickerView
                     city._name = cityData["Descripcion"]! as! String
                     city.latitude = Float(cityData["Latitud"]! as! String)!
                     city.longitude = Float(cityData["Altitud"]! as! String)!
-                    self.cities.append(city)
-                    self.pickerViewCity.reloadAllComponents()
+                    self.cityPickerViewAdapter.add(city: city)
+                }
+                self.cityPickerView.reloadAllComponents()
+                
+                // show the first option (city)
+                let firstCity: City = self.cityPickerViewAdapter.getFirstOption()
+                self.txtCity.text = firstCity.name
+                self.requestCategoriesFor(cityId: firstCity.id)
+                
+                // Store in local storage using realm
+                let realm = try! Realm()
+                
+                // Persist data
+                try! realm.write {
+                    for city in self.cityPickerViewAdapter.cities {
+                        realm.add(city)
+                    }                    
                 }
             }
         }
         
-        pickerViewCity.dataSource = self
-        pickerViewCity.delegate = self
-    }
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return cities.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        self.view.endEditing(true)
-        return cities[row].name
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("Ciudad seleccionada: \(cities[row].name)")
-        requestCategoriesFor(cityId: cities[row].id)
-        self.view.endEditing(true)
+        // Source & delegate for PickerView
+        cityPickerView.dataSource = cityPickerViewAdapter
+        cityPickerView.delegate = cityPickerViewAdapter
+        // Bind with the proper textField
+        txtCity.inputView = cityPickerView
+        // To propagate the selection event
+        cityPickerViewAdapter.delegate = self
     }
     
     func loadCategories() {
-        requestCategoriesFor(cityId: 1)
+        // requestCategoriesFor(cityId: 1)
+        // it is loaded after load cities (based on the first city option)
         
         categoryTableView.dataSource = categoryList
         categoryTableView.delegate = categoryList

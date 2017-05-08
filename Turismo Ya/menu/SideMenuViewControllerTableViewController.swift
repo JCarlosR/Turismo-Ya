@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import SideMenu
 
 class SideMenuViewControllerTableViewController: UITableViewController {
 
+    @IBOutlet weak var labelUserName: UILabel!
+    @IBOutlet weak var labelLogout: UILabel!
     
     @IBAction func changeLangToEs(_ sender: Any) {
         Global.lang = "es"
         NotificationCenter.default.post(name: Notification.Name("updatedLanguage"), object: nil)
         self.dismiss(animated: true)
     }
-    
-    
+        
     @IBAction func changeLangToEn(_ sender: Any) {
         Global.lang = "en"
         NotificationCenter.default.post(name: Notification.Name("updatedLanguage"), object: nil)
@@ -27,11 +29,16 @@ class SideMenuViewControllerTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
+        if let user = Global.user {
+            labelUserName.text = user.name
+        } else {
+            labelUserName.text = Global.labelGuestUser
+        }
+        
+        labelLogout.text = Global.labelLogout
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,18 +47,41 @@ class SideMenuViewControllerTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    {
+        switch section
+        {
+        case 0:
+            return Global.parseTextByLang(str: "Mis datos|My info")
+        case 1:
+            return Global.parseTextByLang(str: "Lenguaje|Language")
+        case 2:
+            return Global.parseTextByLang(str: "Contacto|Contact")
+        default: // case 3
+            return Global.parseTextByLang(str: "Salir|Exit")
+        }
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // return the number of sections
-        return 2
+        return 4
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // return the number of rows
         if section == 0 {
-            return 2
+            if Global.authenticated {
+                return 2
+            } else {
+                return 1
+            }
         } else if section == 1 {
             return 2
+        } else if section == 2 {
+            return 2
+        } else if section == 3 {
+            return 1
         }
         return 0
     }

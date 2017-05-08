@@ -26,7 +26,10 @@ target 'Turismo Ya' do
 
   source 'https://github.com/CocoaPods/Specs.git'
   platform :ios, '8.0'
-  use_frameworks!
   pod 'SideMenu'
+
+  pod 'RealmSwift'
+
+  pod 'ImageSlideshow', '~> 1.2'
   
 end
