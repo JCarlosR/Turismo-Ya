@@ -31,6 +31,9 @@ class Global: NSObject {
         self.authenticated = false
     }
     
+    // Images URL
+    static let imageUrlWelcome: String = "http://52.170.87.192:50/premiun/images/otros/bienvenido.jpg"
+    
     
     // ViewController titles & labels
     static var titleCategories: String {
@@ -43,14 +46,36 @@ class Global: NSObject {
             return parseTextByLang(str: "Lugares|Places")
         }
     }
+    // labels in side menu:
     static var labelGuestUser: String {
         get {
             return parseTextByLang(str: "Usuario invitado|Guest user")
         }
     }
+    static var labelFavorites: String {
+        get {
+            return parseTextByLang(str: "Mis favoritos|My favorites")
+        }
+    }
+    static var labelWelcomeMessage: String {
+        get {
+            return parseTextByLang(str: "Mensaje de bienvenida|Welcome message")
+        }
+    }
+    static var labelTouristGuide: String {
+        get {
+            return parseTextByLang(str: "Guía turística|Touist guide")
+        }
+    }
     static var labelLogout: String {
         get {
             return parseTextByLang(str: "Cerrar sesión|Logout")
+        }
+    }
+    // labels in view controllers:
+    static var labelWelcomeTitle: String {
+        get {
+            return parseTextByLang(str: "Bienvenido a la Región La Libertad|Welcome to the Region La Libertad")
         }
     }
     static var labelCity: String {
@@ -137,6 +162,7 @@ class Global: NSObject {
     static let urlLogin: String = baseUrl + "aperturar.php?task=loadNavegante"
     static let urlCities: String = baseUrl + "aperturar.php?task=loadCiudad"
     static let urlPlaces: String = baseUrl + "aperturar.php?task=loadProducto"
+    static let urlParameterWelcomeMessage: String = baseUrl + "aperturar.php?task=loadParametro&idparametro=73"
     
     static let urlAddFavorite: String = baseUrl + "aperturar.php?task=createFavorite" // &idnavegante=7&idproducto=2
     static let urlRemoveFavorite: String = baseUrl + "aperturar.php?task=createFavorite&opcion=3"
@@ -147,4 +173,7 @@ class Global: NSObject {
     
     static let urlGetComments: String = baseUrl + "aperturar.php?task=loadComentario" // &idproducto=3
     static let urlCreateComment: String = baseUrl + "aperturar.php?task=createComentario"
+    
+    static let urlLanguages: String = baseUrl + "aperturar.php?task=loadIdiomaGuia"
+    static let urlTouristGuide: String = baseUrl + "aperturar.php?task=loadGuiaTuristica"
 }

@@ -49,6 +49,20 @@
 		D2830A9E1EC0BB0C00EA264E /* p_trujillo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2830A9B1EC0BB0C00EA264E /* p_trujillo.jpg */; };
 		D2830A9F1EC0BB0C00EA264E /* p_pacasmayo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2830A9C1EC0BB0C00EA264E /* p_pacasmayo.jpg */; };
 		D2830AA01EC0BB0C00EA264E /* p_julcan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2830A9D1EC0BB0C00EA264E /* p_julcan.jpg */; };
+		D2830AA21EC0C9DE00EA264E /* MapAndPlacesVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AA11EC0C9DE00EA264E /* MapAndPlacesVController.swift */; };
+		D2830AA51EC1230800EA264E /* book-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2830AA31EC1230800EA264E /* book-icon.png */; };
+		D2830AA61EC1230800EA264E /* welcome-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2830AA41EC1230800EA264E /* welcome-icon.png */; };
+		D2830AA91EC12A6700EA264E /* WelcomeMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AA81EC12A6700EA264E /* WelcomeMessageViewController.swift */; };
+		D2830AAB1EC1305400EA264E /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AAA1EC1305400EA264E /* Parameter.swift */; };
+		D2830AAE1EC3CCA400EA264E /* TouristGuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AAD1EC3CCA400EA264E /* TouristGuideViewController.swift */; };
+		D2830AB01EC3EA7100EA264E /* LanguagePickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AAF1EC3EA7100EA264E /* LanguagePickerViewAdapter.swift */; };
+		D2830AB21EC3EAC200EA264E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AB11EC3EAC200EA264E /* Language.swift */; };
+		D2830AB41EC3F4D500EA264E /* TouristGuideList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AB31EC3F4D500EA264E /* TouristGuideList.swift */; };
+		D2830AB61EC3F8D500EA264E /* Guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AB51EC3F8D500EA264E /* Guide.swift */; };
+		D2830AB91EC3FDCF00EA264E /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2830AB71EC3FDCF00EA264E /* GuideTableViewCell.swift */; };
+		D2830ABA1EC3FDCF00EA264E /* GuideTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2830AB81EC3FDCF00EA264E /* GuideTableViewCell.xib */; };
+		D2830ABD1EC4010F00EA264E /* male-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2830ABB1EC4010F00EA264E /* male-icon.png */; };
+		D2830ABE1EC4010F00EA264E /* female-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2830ABC1EC4010F00EA264E /* female-icon.png */; };
 		D285691E1E72044200F630F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D285691D1E72044200F630F4 /* logo.png */; };
 		D28569201E7216A600F630F4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285691F1E7216A600F630F4 /* RegisterViewController.swift */; };
 		D28569221E727BCF00F630F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28569211E727BCF00F630F4 /* LoginViewController.swift */; };
@@ -136,6 +150,20 @@
 		D2830A9B1EC0BB0C00EA264E /* p_trujillo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p_trujillo.jpg; path = slider/p_trujillo.jpg; sourceTree = "<group>"; };
 		D2830A9C1EC0BB0C00EA264E /* p_pacasmayo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p_pacasmayo.jpg; path = slider/p_pacasmayo.jpg; sourceTree = "<group>"; };
 		D2830A9D1EC0BB0C00EA264E /* p_julcan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = p_julcan.jpg; path = slider/p_julcan.jpg; sourceTree = "<group>"; };
+		D2830AA11EC0C9DE00EA264E /* MapAndPlacesVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAndPlacesVController.swift; sourceTree = "<group>"; };
+		D2830AA31EC1230800EA264E /* book-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "book-icon.png"; path = "icons/book-icon.png"; sourceTree = "<group>"; };
+		D2830AA41EC1230800EA264E /* welcome-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "welcome-icon.png"; path = "icons/welcome-icon.png"; sourceTree = "<group>"; };
+		D2830AA81EC12A6700EA264E /* WelcomeMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeMessageViewController.swift; sourceTree = "<group>"; };
+		D2830AAA1EC1305400EA264E /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		D2830AAD1EC3CCA400EA264E /* TouristGuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouristGuideViewController.swift; sourceTree = "<group>"; };
+		D2830AAF1EC3EA7100EA264E /* LanguagePickerViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagePickerViewAdapter.swift; sourceTree = "<group>"; };
+		D2830AB11EC3EAC200EA264E /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Language.swift; path = model/Language.swift; sourceTree = "<group>"; };
+		D2830AB31EC3F4D500EA264E /* TouristGuideList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouristGuideList.swift; sourceTree = "<group>"; };
+		D2830AB51EC3F8D500EA264E /* Guide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Guide.swift; path = model/Guide.swift; sourceTree = "<group>"; };
+		D2830AB71EC3FDCF00EA264E /* GuideTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
+		D2830AB81EC3FDCF00EA264E /* GuideTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuideTableViewCell.xib; sourceTree = "<group>"; };
+		D2830ABB1EC4010F00EA264E /* male-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "male-icon.png"; path = "icons/male-icon.png"; sourceTree = "<group>"; };
+		D2830ABC1EC4010F00EA264E /* female-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "female-icon.png"; path = "icons/female-icon.png"; sourceTree = "<group>"; };
 		D285691D1E72044200F630F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		D285691F1E7216A600F630F4 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D28569211E727BCF00F630F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +267,8 @@
 		D21E19861E5A628400B24687 /* Turismo Ya */ = {
 			isa = PBXGroup;
 			children = (
+				D2830AAC1EC3CC7800EA264E /* tourist guide */,
+				D2830AA71EC12A4A00EA264E /* welcome */,
 				D2830A9A1EC0BAE900EA264E /* slider */,
 				D23D93351EBD43A5008844A8 /* cities */,
 				D23D932E1EBA75BB008844A8 /* favorites */,
@@ -303,6 +333,10 @@
 		D22BC87A1EA95FDD00E9C1DB /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				D2830ABB1EC4010F00EA264E /* male-icon.png */,
+				D2830ABC1EC4010F00EA264E /* female-icon.png */,
+				D2830AA31EC1230800EA264E /* book-icon.png */,
+				D2830AA41EC1230800EA264E /* welcome-icon.png */,
 				D23D93381EBD4E8E008844A8 /* exit-icon.png */,
 				D23D932C1EB95495008844A8 /* email-icon.png */,
 				D22BC8831EA964A100E9C1DB /* phone-icon.png */,
@@ -350,6 +384,27 @@
 			name = slider;
 			sourceTree = "<group>";
 		};
+		D2830AA71EC12A4A00EA264E /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D2830AA81EC12A6700EA264E /* WelcomeMessageViewController.swift */,
+			);
+			name = welcome;
+			sourceTree = "<group>";
+		};
+		D2830AAC1EC3CC7800EA264E /* tourist guide */ = {
+			isa = PBXGroup;
+			children = (
+				D2830AAD1EC3CCA400EA264E /* TouristGuideViewController.swift */,
+				D2830AAF1EC3EA7100EA264E /* LanguagePickerViewAdapter.swift */,
+				D2830AB11EC3EAC200EA264E /* Language.swift */,
+				D2830AB31EC3F4D500EA264E /* TouristGuideList.swift */,
+				D2830AB71EC3FDCF00EA264E /* GuideTableViewCell.swift */,
+				D2830AB81EC3FDCF00EA264E /* GuideTableViewCell.xib */,
+			);
+			name = "tourist guide";
+			sourceTree = "<group>";
+		};
 		D28569231E73507B00F630F4 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +418,8 @@
 				D23D93311EBA96BE008844A8 /* Favorite.swift */,
 				D23D93331EBBD269008844A8 /* Qualification.swift */,
 				D23D933A1EBD6F9A008844A8 /* Comment.swift */,
+				D2830AAA1EC1305400EA264E /* Parameter.swift */,
+				D2830AB51EC3F8D500EA264E /* Guide.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -400,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D45D4B1E667D0600CB574A /* MyGoogleMapController.swift */,
+				D2830AA11EC0C9DE00EA264E /* MapAndPlacesVController.swift */,
 			);
 			name = maps;
 			sourceTree = "<group>";
@@ -548,13 +606,18 @@
 				D22BC8821EA9608200E9C1DB /* share-128.png in Resources */,
 				D2830AA01EC0BB0C00EA264E /* p_julcan.jpg in Resources */,
 				D22BC8881EA964A100E9C1DB /* like-icon.png in Resources */,
+				D2830ABD1EC4010F00EA264E /* male-icon.png in Resources */,
 				D23D93411EBD7330008844A8 /* CommentTableViewCell.xib in Resources */,
 				D23D932D1EB95495008844A8 /* email-icon.png in Resources */,
 				D22BC8871EA964A100E9C1DB /* home-icon.png in Resources */,
+				D2830AA51EC1230800EA264E /* book-icon.png in Resources */,
 				D22BC8801EA9608200E9C1DB /* star-off.png in Resources */,
 				D2830A9F1EC0BB0C00EA264E /* p_pacasmayo.jpg in Resources */,
 				D21E198D1E5A628400B24687 /* Main.storyboard in Resources */,
+				D2830ABE1EC4010F00EA264E /* female-icon.png in Resources */,
+				D2830ABA1EC3FDCF00EA264E /* GuideTableViewCell.xib in Resources */,
 				D2D45D541E69F19100CB574A /* PlaceTableViewCell.xib in Resources */,
+				D2830AA61EC1230800EA264E /* welcome-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,12 +783,16 @@
 				D2D45D5C1E6A15CF00CB574A /* ScorePickerViewAdapter.swift in Sources */,
 				D248F04C1E5E0D6800CFFDEC /* CategoryTableViewCell.swift in Sources */,
 				D2D45D4C1E667D0600CB574A /* MyGoogleMapController.swift in Sources */,
+				D2830AB61EC3F8D500EA264E /* Guide.swift in Sources */,
 				D28569201E7216A600F630F4 /* RegisterViewController.swift in Sources */,
 				D28262AC1E89CB7900282698 /* SubCategory.swift in Sources */,
 				D23D93341EBBD269008844A8 /* Qualification.swift in Sources */,
+				D2830AAE1EC3CCA400EA264E /* TouristGuideViewController.swift in Sources */,
 				D2A2BA881EB63AB200FD7F15 /* CountryPickerViewAdapter.swift in Sources */,
+				D2830AAB1EC1305400EA264E /* Parameter.swift in Sources */,
 				D21E198A1E5A628400B24687 /* MainViewController.swift in Sources */,
 				D2D45D531E69F19100CB574A /* PlaceTableViewCell.swift in Sources */,
+				D2830AB91EC3FDCF00EA264E /* GuideTableViewCell.swift in Sources */,
 				D23D93301EBA75E6008844A8 /* FavoritesViewController.swift in Sources */,
 				D28569251E73509700F630F4 /* City.swift in Sources */,
 				D23D933B1EBD6F9A008844A8 /* Comment.swift in Sources */,
@@ -738,16 +805,21 @@
 				D23D93371EBD43E7008844A8 /* CityPickerViewAdapter.swift in Sources */,
 				D22BC8761EA4413900E9C1DB /* Score.swift in Sources */,
 				D2D45D5A1E6A13E500CB574A /* TypePickerViewAdapter.swift in Sources */,
+				D2830AA91EC12A6700EA264E /* WelcomeMessageViewController.swift in Sources */,
 				D23D93401EBD7330008844A8 /* CommentTableViewCell.swift in Sources */,
+				D2830AB21EC3EAC200EA264E /* Language.swift in Sources */,
 				D28569221E727BCF00F630F4 /* LoginViewController.swift in Sources */,
 				D22BC8791EA6ED4A00E9C1DB /* PlaceInfoViewController.swift in Sources */,
 				D23D932B1EB94D1A008844A8 /* SideMenuViewControllerTableViewController.swift in Sources */,
 				D2A2BA8A1EB63B4400FD7F15 /* Country.swift in Sources */,
 				D22BC8741EA3FCEE00E9C1DB /* Place.swift in Sources */,
+				D2830AA21EC0C9DE00EA264E /* MapAndPlacesVController.swift in Sources */,
 				D248F0471E5E01CA00CFFDEC /* CategoryList.swift in Sources */,
+				D2830AB01EC3EA7100EA264E /* LanguagePickerViewAdapter.swift in Sources */,
 				D22BC8721EA3F0B200E9C1DB /* Global.swift in Sources */,
 				D2A2BA8C1EB667EF00FD7F15 /* User.swift in Sources */,
 				D23D933D1EBD70EA008844A8 /* CommentList.swift in Sources */,
+				D2830AB41EC3F4D500EA264E /* TouristGuideList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

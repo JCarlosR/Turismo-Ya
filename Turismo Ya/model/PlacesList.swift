@@ -68,7 +68,8 @@ extension PlacesList: UITableViewDataSource, UITableViewDelegate {
         
         // Asignamos los valores a la celda y devolvemos
         let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/producto/\(place.imageUrl)")
-        cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "pajaro azul"), options: SDWebImageOptions.progressiveDownload)
+        cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "logo.png")
+            , options: SDWebImageOptions.progressiveDownload)
         cell.placeNameLabel.text = place.abrev
         cell.placeDescriptionLabel.text = place.descripcion
         

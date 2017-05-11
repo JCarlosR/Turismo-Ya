@@ -67,7 +67,7 @@ class MenuViewController: UIViewController, ShowPlacesDelegate, OpenMapDelegate,
                 destinationVC.selectedCategoryId = self.selectedCategoryId
             }
         } else if segue.identifier == "showMapSegue" {
-            if let destinationVC = segue.destination as? MyGoogleMapController {
+            if let destinationVC = segue.destination as? MapAndPlacesVController {
                 destinationVC.selectedCategoryId = self.selectedCategoryId
             }
         }

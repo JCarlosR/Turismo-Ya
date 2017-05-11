@@ -12,7 +12,6 @@ import Alamofire
 
 class MyGoogleMapController: UIViewController {
 
-    var selectedCategoryId: Int16 = 0
     var defaultZoom: Float = 13
     
     var markerTitle: String = ""
@@ -26,68 +25,20 @@ class MyGoogleMapController: UIViewController {
         super.viewDidLoad()
         
         let rect = CGRect(x: 0, y: 0, width: 100, height: 100)
-        var camera = GMSCameraPosition.camera(withLatitude: self.latitudeCenter,
+        let camera = GMSCameraPosition.camera(withLatitude: self.latitudeCenter,
                                                   longitude: self.longitudeCenter, zoom: self.defaultZoom)
         let mapView = GMSMapView.map(withFrame: rect, camera: camera)
         
-        if self.selectedCategoryId != 0 {
-            Alamofire.request("http://52.170.87.192:50/premiun/modules/aperturar.php?task=loadProducto").responseJSON { response in
-                
-                print("Places result:", response.result)   // result of response serialization
-                
-                if let result = response.result.value {
-                    let placesData: NSArray = result as! NSArray
-                    for placeData: NSDictionary in placesData as! [NSDictionary] {
-                        let place = Place()
-                        place.id = Int16(placeData["idProducto"]! as! String)!
-                        place.idSubLinea = Int16(placeData["idSubLinea"]! as! String)!
-                        place.abrev = placeData["Abrev"]! as! String
-                        place.idValoracion = Int16(placeData["idValoracion"]! as! String)!
-                        place._descripcion = placeData["Descripcion"]! as! String
-                        place.telefono = placeData["Telefono"]! as! String
-                        place.website = placeData["Website"]! as! String
-                        place.address = placeData["Direccion"]! as! String
-                        
-                        place.horaAbre = placeData["HoraAbierto"]! as! String
-                        place.horaCierra = placeData["HoraCierre"]! as! String
-                        place.tenedor = placeData["Tenedor"]! as! String
-                        
-                        place.latitud = placeData["Latitud"]! as! String
-                        place.longitud = placeData["Altitud"]! as! String
-                        place.imageUrl = placeData["Imagen"]! as! String
-                        
-                        self.places.append(place)
-                    }
-                    
-                    if self.places.count > 0 {
-                        self.latitudeCenter = Double(self.places[0].latitud)!
-                        self.longitudeCenter = Double(self.places[0].longitud)!
-                        camera = GMSCameraPosition.camera(withLatitude: self.latitudeCenter,
-                                                          longitude: self.longitudeCenter, zoom: self.defaultZoom)
-                        mapView.animate(to: camera)
-                    }
-                    
-                    for place in self.places {
-                        let marker = GMSMarker()
-                        marker.position = CLLocationCoordinate2D(latitude: Double(place.latitud)!, longitude: Double(place.longitud)!)
-                        marker.snippet = place.abrev
-                        marker.appearAnimation = GMSMarkerAnimation.pop
-                        marker.map = mapView
-                    }
-                }
-            }
-        } else {
-            // just one location
-            let marker = GMSMarker()
-            marker.position = CLLocationCoordinate2D(latitude: Double(self.latitudeCenter), longitude: Double(self.longitudeCenter))
-            marker.snippet = self.markerTitle
-            marker.appearAnimation = GMSMarkerAnimation.pop
-            marker.map = mapView
+
+        // just one location
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: Double(self.latitudeCenter), longitude: Double(self.longitudeCenter))
+        marker.snippet = self.markerTitle
+        marker.appearAnimation = GMSMarkerAnimation.pop
+        marker.map = mapView
             
-            mapView.animate(toZoom: 15)
-        }
-        
-        
+        mapView.animate(toZoom: 15)
+                
         self.view = mapView
     }
     

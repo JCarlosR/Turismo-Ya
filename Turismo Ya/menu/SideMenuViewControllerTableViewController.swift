@@ -12,6 +12,9 @@ import SideMenu
 class SideMenuViewControllerTableViewController: UITableViewController {
 
     @IBOutlet weak var labelUserName: UILabel!
+    @IBOutlet weak var labelFavorites: UILabel!
+    @IBOutlet weak var labelWelcomeMessage: UILabel!
+    @IBOutlet weak var labelTouristGuide: UILabel!
     @IBOutlet weak var labelLogout: UILabel!
     
     @IBAction func changeLangToEs(_ sender: Any) {
@@ -37,7 +40,9 @@ class SideMenuViewControllerTableViewController: UITableViewController {
         } else {
             labelUserName.text = Global.labelGuestUser
         }
-        
+        labelFavorites.text = Global.labelFavorites
+        labelWelcomeMessage.text = Global.labelWelcomeMessage
+        labelTouristGuide.text = Global.labelTouristGuide
         labelLogout.text = Global.labelLogout
     }
 
@@ -55,17 +60,19 @@ class SideMenuViewControllerTableViewController: UITableViewController {
         case 0:
             return Global.parseTextByLang(str: "Mis datos|My info")
         case 1:
-            return Global.parseTextByLang(str: "Lenguaje|Language")
+            return Global.parseTextByLang(str: "Bienvenida|Welcome")
         case 2:
+            return Global.parseTextByLang(str: "Lenguaje|Language")
+        case 3:
             return Global.parseTextByLang(str: "Contacto|Contact")
-        default: // case 3
+        default: // case 4
             return Global.parseTextByLang(str: "Salir|Exit")
         }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // return the number of sections
-        return 4
+        return 5
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,6 +88,8 @@ class SideMenuViewControllerTableViewController: UITableViewController {
         } else if section == 2 {
             return 2
         } else if section == 3 {
+            return 2
+        } else if section == 4 {
             return 1
         }
         return 0
