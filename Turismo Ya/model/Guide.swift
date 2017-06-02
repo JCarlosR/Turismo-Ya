@@ -1,9 +1,5 @@
-//
 //  Guide.swift
-//  Turismo Ya
-//
 //  Copyright © 2017 Programación y más. All rights reserved.
-//
 
 /*
 {
@@ -24,13 +20,17 @@ import UIKit
 import RealmSwift
 
 class Guide: Object {
-    var idGuia: String = ""
-    var nombre: String = ""
-    var sexo: String = ""
-    var ruc: String = ""
-    var dni: String = ""
-    var idioma: String = ""
-    var telefono: String = ""
-    var email: String = ""
+    dynamic var idGuia: String = ""
+    dynamic var nombre: String = ""
+    dynamic var sexo: String = ""
+    dynamic var ruc: String = ""
+    dynamic var dni: String = ""
+    dynamic var idioma: String = ""
+    dynamic var telefono: String = ""
+    dynamic var email: String = ""
     // var fechaExpedicion: String = ""
+    
+    override static func primaryKey() -> String? {
+        return "idGuia"
+    }
 }

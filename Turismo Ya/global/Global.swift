@@ -31,8 +31,16 @@ class Global: NSObject {
         self.authenticated = false
     }
     
+    
+    // Global variables
+    static var selectedCityId: Int16 = 1 // City 1 is ALL
+    // Global constants
+    static let defaultPlaceholder: UIImage = #imageLiteral(resourceName: "camarita.jpg")
+    
+    
     // Images URL
-    static let imageUrlWelcome: String = "http://52.170.87.192:50/premiun/images/otros/bienvenido.jpg"
+    static let imageBasePath: String = "http://13.88.16.49:50/ProgramaAdministrativoCopia/images/"
+    static let imageUrlWelcome: String = "http://www.regionlalibertad.gob.pe/images/autoridades/lvaldez.jpg"
     
     
     // ViewController titles & labels
@@ -86,6 +94,16 @@ class Global: NSObject {
     static var labelShowMap: String {
         get {
             return parseTextByLang(str: "Ver mapa|Show map")
+        }
+    }
+    static var labelLanguage: String {
+        get {
+            return parseTextByLang(str: "Lenguaje|Language")
+        }
+    }
+    static var labelLinkDownloadList: String {
+        get {
+            return parseTextByLang(str: "Lista general|General list")
         }
     }
     static var labelHowArrive: String {
@@ -155,12 +173,16 @@ class Global: NSObject {
     
     // Base URLs for API
     
-    static let baseUrl: String = "http://52.170.87.192:50/premiun/modules/"
+    static let baseUrl: String = "http://13.88.16.49:50/ProgramaAdministrativoCopia/modules/"
     
     static let urlContries: String = baseUrl + "aperturar.php?task=loadPais"
     static let urlRegister: String = baseUrl + "aperturar.php?task=createUser"
     static let urlLogin: String = baseUrl + "aperturar.php?task=loadNavegante"
     static let urlCities: String = baseUrl + "aperturar.php?task=loadCiudad"
+    static let urlCategories: String = baseUrl + "aperturar.php?task=loadLinea"
+    static let urlCityCategoryRelations: String = baseUrl + "aperturar.php?task=loadCiudadLinea"
+    static let urlCityPlaceRelations: String = baseUrl + "aperturar.php?task=loadCiudadProducto"
+    static let urlTypes: String = baseUrl + "aperturar.php?task=loadSubLinea"
     static let urlPlaces: String = baseUrl + "aperturar.php?task=loadProducto"
     static let urlParameterWelcomeMessage: String = baseUrl + "aperturar.php?task=loadParametro&idparametro=73"
     
@@ -176,4 +198,5 @@ class Global: NSObject {
     
     static let urlLanguages: String = baseUrl + "aperturar.php?task=loadIdiomaGuia"
     static let urlTouristGuide: String = baseUrl + "aperturar.php?task=loadGuiaTuristica"
+    
 }

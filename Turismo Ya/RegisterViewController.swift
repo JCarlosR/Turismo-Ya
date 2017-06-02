@@ -10,21 +10,34 @@ import UIKit
 import Alamofire
 
 class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPickerViewDelegate {
-
-    @IBOutlet weak var labelAccept: UILabel!
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtName: UITextField!
+    @IBOutlet weak var txtLastName: UITextField!
     @IBOutlet weak var txtCountry: UITextField!
     
     var countryPickerViewAdapter = CountryPickerViewAdapter()
     var countryPickerView: UIPickerView! = UIPickerView()
     var selectedCountryId: String = ""
-        
+    
+    
+    @IBOutlet weak var btnRegister: UIButton!
+    @IBOutlet weak var btnFacebook: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        labelAccept.numberOfLines = 2
+        // add border to buttons
+        // btn.backgroundColor = .clear
+        btnRegister.layer.cornerRadius = 17
+        btnRegister.layer.borderWidth = 1
+        btnRegister.layer.borderColor = UIColor.black.cgColor
+        
+        //
+        btnFacebook.layer.cornerRadius = 17
+        btnFacebook.layer.borderWidth = 1
+        btnFacebook.layer.borderColor = UIColor.black.cgColor
+        
         loadCountries()
     }
 
@@ -33,7 +46,8 @@ class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPicke
         // Dispose of any resources that can be recreated.
     }
     
-    func newCountryWasSelected(countryName: String, countryId: String) {
+    func newCountryWasSelected(countryName: String, countryId: String)
+    {
         self.txtCountry.text = countryName
         self.selectedCountryId = countryId
         
@@ -76,13 +90,14 @@ class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPicke
     @IBAction func btnConfirmRegisterPressed(_ sender: UIButton) {
         let email: String! = txtEmail.text
         let name: String! = txtName.text
+        let lastName: String! = txtLastName.text
         
         if email.characters.count < 3 || name.characters.count < 3 {
             Global.showToast(message: "Ingrese sus datos", viewController: self)
             return
         }
         
-        var params: String = "&nombre=\(name!)&idpais=\(selectedCountryId)&email=\(email!)"
+        var params: String = "&nombre=\(name!)&apellido=\(lastName!)&idpais=\(selectedCountryId)&email=\(email!)"
         
         params = params.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
         

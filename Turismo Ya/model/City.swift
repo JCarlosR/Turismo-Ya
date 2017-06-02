@@ -20,14 +20,18 @@ import UIKit
 import RealmSwift
 
 class City: Object {
-    var id: Int16 = 0
-    var _name: String = ""
-    var name: String {
+    dynamic var id: Int16 = 0
+    dynamic var _name: String = ""
+    dynamic var name: String {
         get {
             return Global.parseTextByLang(str: self._name)
         }
     }
-    var latitude: Float = 0
-    var longitude: Float = 0
-    var imageUrl: String = ""
+    dynamic var latitude: Float = 0
+    dynamic var longitude: Float = 0
+    dynamic var imageUrl: String = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

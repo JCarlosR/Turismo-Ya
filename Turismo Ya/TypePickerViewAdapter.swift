@@ -19,7 +19,7 @@ class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func getFirstTypeText() -> String {
-        return types[0].name
+        return types[0].getName()
     }
     
     
@@ -32,11 +32,11 @@ class TypePickerViewAdapter: NSObject, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return types[row].name
+        return types[row].getName()
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        delegate?.newTypeWasSelected(typeName: types[row].name, typeId: types[row].id)
+        delegate?.newTypeWasSelected(typeName: types[row].getName(), typeId: types[row].id)
         // print("Tipo seleccionado: \(types[row])")
     }
 }

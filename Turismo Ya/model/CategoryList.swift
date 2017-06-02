@@ -50,8 +50,8 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
         
         // cell.textLabel!.text = categoryName
         // cell.categoryImageView.image = category.image
-        let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/categories/\(category.imageUrl)")
-        cell.categoryImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "logo.png"), options: SDWebImageOptions.progressiveDownload)
+        let imageUrl = URL(string: Global.imageBasePath + "categories/\(category.imageUrl)")
+        cell.categoryImageView.sd_setImage(with: imageUrl, placeholderImage: Global.defaultPlaceholder, options: SDWebImageOptions.progressiveDownload)
         cell.categoryNameLabel.text = category.name
         cell.delegate = delegate as! OpenMapDelegate? // the same instance implements both protocols
         
@@ -71,7 +71,7 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Mostrar detalles de la categoría \(categories[indexPath.row].name)")
+        print("Mostrar detalles de la categoría \(categories[indexPath.row].name))")
         delegate?.didSelectCategory(categoryId: categories[indexPath.row].id)
     }
     

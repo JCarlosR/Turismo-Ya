@@ -1,10 +1,5 @@
-//
 //  TouristGuideList.swift
-//  Turismo Ya
-//
-//  Created by rimenri on 10/05/2017.
 //  Copyright © 2017 Programación y más. All rights reserved.
-//
 
 import UIKit
 
@@ -63,11 +58,6 @@ extension TouristGuideList: UITableViewDataSource, UITableViewDelegate {
         
         cell.labelName.text = guide.nombre
         cell.labelPhone.text = guide.telefono
-        
-        // cell.delegate = delegate as! OpenMapDelegate? // the same instance implements both protocols
-        
-        // metadata
-        // cell.categoryId = category.id
         
         return cell
         

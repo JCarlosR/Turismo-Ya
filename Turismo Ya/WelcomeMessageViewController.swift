@@ -4,6 +4,7 @@
 import UIKit
 import Alamofire
 import SDWebImage
+import RealmSwift
 
 class WelcomeMessageViewController: UIViewController {
 
@@ -25,25 +26,39 @@ class WelcomeMessageViewController: UIViewController {
     }
     
     func loadWelcomeMessage() {
-        Alamofire.request(Global.urlParameterWelcomeMessage).responseJSON { response in
-            // print("Places result:", response.result)
-            
-            if let result = response.result.value {
-                let arrayData: NSArray = result as! NSArray
-                for paramData: NSDictionary in arrayData as! [NSDictionary] {
-                    let parameter = Parameter()
-                    parameter.idParametro = paramData["idParametro"]! as! String
-                    parameter.nombre = paramData["Nombre"]! as! String
-                    parameter.valor = paramData["Valor"]! as! String
+        
+        let realm = try! Realm()
+        
+        if Connectivity.isConnectedToInternet() {
+            Alamofire.request(Global.urlParameterWelcomeMessage).responseJSON { response in
+                // print("Places result:", response.result)
+                
+                if let result = response.result.value {
+                    let arrayData: NSArray = result as! NSArray
+                    for paramData: NSDictionary in arrayData as! [NSDictionary] {
+                        let parameter = Parameter()
+                        parameter.idParametro = paramData["idParametro"]! as! String
+                        parameter.nombre = paramData["Nombre"]! as! String
+                        parameter.valor = paramData["Valor"]! as! String
+                        
+                        self.labelWelcomeContent.text = Global.parseTextByLang(str: parameter.valor)
+                        
+                        // persist data
+                        try! realm.write {
+                            realm.add(parameter, update: true)
+                        }
+                    }
                     
-                    self.labelWelcomeContent.text = Global.parseTextByLang(str: parameter.valor)
-                    // add to params list
                 }
-                
-                // persist data
-                
+            }
+        } else {
+            let parameterWelcome = realm.objects(Parameter.self).filter("idParametro == '73'")
+            // var welcomeMessage = "No internet connection."
+            if parameterWelcome.count > 0 {
+                self.labelWelcomeContent.text = Global.parseTextByLang(str: parameterWelcome[0].valor)
             }
         }
+        
     }
 
     override func didReceiveMemoryWarning() {

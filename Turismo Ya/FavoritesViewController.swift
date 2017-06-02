@@ -28,20 +28,20 @@ class FavoritesViewController: UITableViewController {
                     let place = Place()
                     place.id = Int16(placeData["idProducto"]! as! String)!
                     place.idSubLinea = Int16(placeData["idSubLinea"]! as! String)!
-                    place.abrev = placeData["Abrev"]! as! String
+                    place.abrev = placeData["Abrev"] as? String ?? ""
                     place.idValoracion = Int16(placeData["idValoracion"]! as! String)!
-                    place._descripcion = placeData["Descripcion"]! as! String
-                    place.telefono = placeData["Telefono"]! as! String
-                    place.website = placeData["Website"]! as! String
-                    place.address = placeData["Direccion"]! as! String
+                    place._descripcion = placeData["Descripcion"] as? String ?? ""
+                    place.telefono = placeData["Telefono"] as? String ?? ""
+                    place.website = placeData["Website"] as? String ?? ""
+                    place.address = placeData["Direccion"] as? String ?? ""
                     
-                    place.horaAbre = placeData["HoraAbierto"]! as! String
-                    place.horaCierra = placeData["HoraCierre"]! as! String
-                    place.tenedor = placeData["Tenedor"]! as! String
+                    place.horaAbre = placeData["HoraAbierto"] as? String ?? ""
+                    place.horaCierra = placeData["HoraCierre"] as? String ?? ""
+                    place.tenedor = placeData["Tenedor"] as? String ?? ""
                     
-                    place.latitud = placeData["Latitud"]! as! String
-                    place.longitud = placeData["Altitud"]! as! String
-                    place.imageUrl = placeData["Imagen"]! as! String
+                    place.latitud = placeData["Latitud"] as? String ?? ""
+                    place.longitud = placeData["Altitud"] as? String ?? ""
+                    place.imageUrl = placeData["Imagen"] as? String ?? ""
                     
                     self.allPlaces.append(place)
                 }
@@ -109,7 +109,7 @@ class FavoritesViewController: UITableViewController {
         
         // Asignamos los valores a la celda y devolvemos
         let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/producto/\(place.imageUrl)")
-        cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "logo.png"), options: SDWebImageOptions.progressiveDownload)
+        cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: Global.defaultPlaceholder, options: SDWebImageOptions.progressiveDownload)
         cell.placeNameLabel.text = place.abrev
         cell.placeDescriptionLabel.text = place.descripcion
         

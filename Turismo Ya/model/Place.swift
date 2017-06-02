@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 /*
 {
  "idProducto":"1",
@@ -24,28 +25,36 @@ import UIKit
  "Imagen":"r_casa_andina_0.jpg"
 }
 */
-class Place: NSObject {
-    var id: Int16 = 0
-    var idSubLinea: Int16 = 0
-    var idValoracion: Int16 = 0
+class Place: Object {
+    dynamic var id: Int16 = 0
+    dynamic var idLinea: String = ""
+    dynamic var idSubLinea: Int16 = 0
+    dynamic var idValoracion: Int16 = 0
     
-    var _descripcion: String = ""
+    dynamic var _descripcion: String = ""
     var descripcion: String {
         get {
             return Global.parseTextByLang(str: _descripcion)
         }
     }
-    var abrev: String = ""
+    dynamic var abrev: String = ""
     
-    var telefono: String = ""
-    var website: String = ""
-    var address: String = ""
-    var horaAbre: String = ""
-    var horaCierra: String = ""
-    var tenedor: String = ""
+    dynamic var telefono: String = ""
+    dynamic var website: String = ""
+    dynamic var address: String = ""
+    dynamic var horaAbre: String = ""
+    dynamic var horaCierra: String = ""
+    dynamic var tenedor: String = ""
     
-    var latitud: String = ""
-    var longitud: String = ""
+    dynamic var latitud: String = ""
+    dynamic var longitud: String = ""
     
-    var imageUrl: String = ""
+    dynamic var imageUrl: String = ""
+    
+    dynamic var idCiudad: String = ""
+    dynamic var ruc: String = ""
+    
+    override static func primaryKey() -> String? {
+        return "id"
+    }
 }

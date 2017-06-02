@@ -11,13 +11,22 @@ import Alamofire
 
 class LoginViewController: UIViewController {
 
-    
     @IBOutlet weak var txtEmail: UITextField!
+    
+    @IBOutlet weak var btnLogin: UIButton!
+    @IBOutlet weak var btnFacebook: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // add border to btnLogin
+        btnLogin.layer.cornerRadius = 17
+        btnLogin.layer.borderWidth = 1
+        btnLogin.layer.borderColor = UIColor.black.cgColor
+        // add border to btnFacebook
+        btnFacebook.layer.cornerRadius = 17
+        btnFacebook.layer.borderWidth = 1
+        btnFacebook.layer.borderColor = UIColor.black.cgColor
     }
 
     override func didReceiveMemoryWarning() {

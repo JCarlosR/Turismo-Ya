@@ -1,14 +1,12 @@
 //
 //  PlaceInfoViewController.swift
-//  Turismo Ya
-//
-//  Created by rimenri on 18/04/2017.
 //  Copyright © 2017 Programación y más. All rights reserved.
 //
 
 import UIKit
 import SDWebImage
 import Alamofire
+import RealmSwift
 
 class PlaceInfoViewController: UIViewController {
 
@@ -74,8 +72,8 @@ class PlaceInfoViewController: UIViewController {
             labelTitlePlace.text = place.abrev
             labelDescriptionPlace.text = place.descripcion
             
-            let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/producto/\(place.imageUrl)")
-            imageViewPlace.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "logo.png"), options: SDWebImageOptions.progressiveDownload)
+            let imageUrl = URL(string: Global.imageBasePath + "producto/\(place.imageUrl)")
+            imageViewPlace.sd_setImage(with: imageUrl, placeholderImage: Global.defaultPlaceholder, options: SDWebImageOptions.progressiveDownload)
             
             
             labelAddress.text = place.address
@@ -122,13 +120,7 @@ class PlaceInfoViewController: UIViewController {
     }
     
     func clickedTopBtnLocation() {
-        /*let secondViewController:MyGoogleMapController = MyGoogleMapController()
-        
-        secondViewController.latitudeCenter = Double((place?.latitud)!)!
-        secondViewController.longitudeCenter = Double((place?.longitud)!)!
-        secondViewController.markerTitle = (place?.abrev)!
-        
-        self.present(secondViewController, animated: true, completion: nil)*/
+        // Show Google Maps
         
         let VC1 = self.storyboard!.instantiateViewController(withIdentifier: "myGoogleMapController") as! MyGoogleMapController
         VC1.latitudeCenter = Double((place?.latitud)!)!
@@ -321,14 +313,29 @@ class PlaceInfoViewController: UIViewController {
     // MARK: - Comments
 
     func loadComments() {
+        // setup table view
         tableViewComments.dataSource = commentList
         tableViewComments.delegate = commentList
+        
+        let realm = try! Realm()
+        
+        if !Connectivity.isConnectedToInternet() {
+            // read from local data
+            print("read Comment objects from realm")
+            let comments = realm.objects(Comment.self).filter("idProducto = '\(self.place?.id ?? 0)'")
+            
+            self.commentList.comments = Array(comments)
+            self.tableViewComments.reloadData()
+            
+            self.hideFooterIfTheUserHasAlreadyCommented()
+            
+            return
+        }
         
         let params: String = "&idproducto=\(self.place?.id ?? 0)"
         Alamofire.request(Global.urlGetComments + params).responseJSON { response in
             
-            // print("Cities result:", response.result)
-            
+            // print("Comments result:", response.result)
             if let result = response.result.value {
                 self.commentList.clearComments()
          
@@ -338,6 +345,7 @@ class PlaceInfoViewController: UIViewController {
                     
                     comment.idComentario = commentData["idComentario"]! as! String
                     comment.idNavegante = commentData["idNavegante"]! as! String
+                    comment.idProducto = commentData["idProducto"]! as! String
                     comment.navegante = commentData["Navegante"]! as! String
                     comment.valor = commentData["Valor"]! as! String
                     comment.fecha = commentData["Fecha"]! as! String
@@ -347,40 +355,31 @@ class PlaceInfoViewController: UIViewController {
                 }
                 self.tableViewComments.reloadData()
                 
-                // check if the authenticated user has commented previously
-                var userHasCommented: Bool = false
-                if Global.authenticated {
-                    for comment in self.commentList.comments {
-                        if comment.idNavegante == Global.user?.id {
-                            userHasCommented = true
-                            break
-                        }
-                    }
-                    self.tableViewComments.tableFooterView?.isHidden = userHasCommented
-                }
+                self.hideFooterIfTheUserHasAlreadyCommented()
                 
-                /* Store in local storage using realm
-                // let realm = try! Realm()
-                
-                // Persist data
+                // persist data
                 try! realm.write {
-                    for city in self.cityPickerViewAdapter.cities {
-                        realm.add(city)
+                    for comment in self.commentList.comments {
+                        realm.add(comment, update: true)
                     }
-                }*/
+                }
             }
         }
         
-        /* Dummy data
-        let comment = Comment()
-        comment.comentario = "Comentario de prueba"
-        comment.fecha = "2017/07/17"
-        comment.navegante = "Juan Ramos"
-        comment.valor = "4"
-        */
-        // comment.idProducto
-        // comment.idNavegante
-        // commentList.addComment(comment: comment)
+    }
+    
+    func hideFooterIfTheUserHasAlreadyCommented() {
+        // check if the authenticated user has commented previously
+        var userHasCommented: Bool = false
+        if Global.authenticated {
+            for comment in self.commentList.comments {
+                if comment.idNavegante == Global.user?.id {
+                    userHasCommented = true
+                    break
+                }
+            }
+            self.tableViewComments.tableFooterView?.isHidden = userHasCommented
+        }
     }
     
     @IBOutlet weak var txtComment: UITextField!

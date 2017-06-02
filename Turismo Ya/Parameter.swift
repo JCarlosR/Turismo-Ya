@@ -7,7 +7,11 @@ import UIKit
 import RealmSwift
 
 class Parameter: Object {
-    var idParametro: String = ""
-    var nombre: String = ""
-    var valor: String = ""
+    dynamic var idParametro: String = ""
+    dynamic var nombre: String = ""
+    dynamic var valor: String = ""
+    
+    override static func primaryKey() -> String? {
+        return "idParametro"
+    }
 }

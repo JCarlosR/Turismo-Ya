@@ -67,9 +67,8 @@ extension PlacesList: UITableViewDataSource, UITableViewDelegate {
         let place = filteredPlaces[indexPath.row]
         
         // Asignamos los valores a la celda y devolvemos
-        let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/producto/\(place.imageUrl)")
-        cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: #imageLiteral(resourceName: "logo.png")
-            , options: SDWebImageOptions.progressiveDownload)
+        let imageUrl = URL(string: Global.imageBasePath + "producto/\(place.imageUrl)")
+        cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: Global.defaultPlaceholder, options: SDWebImageOptions.progressiveDownload)
         cell.placeNameLabel.text = place.abrev
         cell.placeDescriptionLabel.text = place.descripcion
         
@@ -78,7 +77,7 @@ extension PlacesList: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Se hizo clic sobre el lugar \(filteredPlaces[indexPath.row].abrev)")
-        delegate?.didSelectPlace(place: places[indexPath.row])
+        delegate?.didSelectPlace(place: filteredPlaces[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { return 125 }
