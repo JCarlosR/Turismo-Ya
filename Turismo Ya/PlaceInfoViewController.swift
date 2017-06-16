@@ -145,10 +145,10 @@ class PlaceInfoViewController: UIViewController {
             
             Alamofire.request(targetUrl)
                 .responseJSON { response in
-                    debugPrint(response)
+                    // debugPrint(response)
                     if let result = response.result.value {
                         let responseCode: Int16 =  result as! Int16
-                        print("Response code for add/remove favorites: \(responseCode)")
+                        // print("Response code for add/remove favorites: \(responseCode)")
                     
                         if responseCode == 1 {
                             if self.isFavorite {
@@ -231,7 +231,7 @@ class PlaceInfoViewController: UIViewController {
                 
                 if let result = response.result.value {
                     let responseCode: Int8 =  result as! Int8
-                    print("Response code for qualification: \(responseCode)")
+                    // print("Response code for qualification: \(responseCode)")
                     
                     if responseCode == 1 {
                         self.paintStarsUpTo(stars: stars)
@@ -321,7 +321,7 @@ class PlaceInfoViewController: UIViewController {
         
         if !Connectivity.isConnectedToInternet() {
             // read from local data
-            print("read Comment objects from realm")
+            // print("read Comment objects from realm")
             let comments = realm.objects(Comment.self).filter("idProducto = '\(self.place?.id ?? 0)'")
             
             self.commentList.comments = Array(comments)
@@ -400,10 +400,10 @@ class PlaceInfoViewController: UIViewController {
             withAllowedCharacters: NSCharacterSet.urlFragmentAllowed)!
         Alamofire.request(Global.urlCreateComment + params)
             .responseJSON { response in
-                debugPrint(response)
+                // debugPrint(response)
                 if let result = response.result.value {
                     let responseCode: Int16 =  result as! Int16
-                    print("Response code for create comment: \(responseCode)")
+                    // print("Response code for create comment: \(responseCode)")
                     
                     if responseCode == 1 {
                         self.loadComments()

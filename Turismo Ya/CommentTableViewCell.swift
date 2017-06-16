@@ -2,7 +2,6 @@
 //  CommentTableViewCell.swift
 //  Turismo Ya
 //
-//  Created by rimenri on 05/05/2017.
 //  Copyright © 2017 Programación y más. All rights reserved.
 //
 

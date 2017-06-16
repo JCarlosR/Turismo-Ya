@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        // print(Realm.Configuration.defaultConfiguration.fileURL!)
         
         // hide the back button (when it comes from exit option menu)
         self.navigationItem.hidesBackButton = true

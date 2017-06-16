@@ -78,7 +78,7 @@ class PlacesViewController: UIViewController,
             }
         } else {
             let realm = try! Realm()
-            print("read SubCategory objects from realm")
+            // print("read SubCategory objects from realm")
             
             let types = realm.objects(SubCategory.self).filter("idLinea == '\(selectedCategoryId)'")
             if types.count > 0 {
@@ -203,7 +203,7 @@ class PlacesViewController: UIViewController,
     }
     
     func feedPlacesListAndReloadTable(placesByCategory: [Place]) {
-        print("filtering \(placesByCategory.count) places by city id: \(selectedCityId)")
+        // print("filtering \(placesByCategory.count) places by city id: \(selectedCityId)")
         for possiblePlace in placesByCategory {
             // hardcoded all city
             if selectedCityId==1 || possiblePlace.idCiudad == String(selectedCityId) {

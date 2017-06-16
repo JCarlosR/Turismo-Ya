@@ -68,7 +68,7 @@ class MapAndPlacesVController: UIViewController, ShowPlaceInfoDelegate {
             }
         } else {
             let realm = try! Realm()
-            print("read Place objects from realm")
+            // print("read Place objects from realm")
             let places = realm.objects(Place.self).filter("idLinea = '\(selectedCategoryId)'")
             //
             self.placesList.places = Array(places)

@@ -1,13 +1,7 @@
-//
-//  RegisterViewController.swift
-//  Turismo Ya
-//
-//  Created by rimenri on 09/03/2017.
-//  Copyright © 2017 Programación y más. All rights reserved.
-//
-
 import UIKit
 import Alamofire
+import  FacebookCore
+import FacebookLogin
 
 class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPickerViewDelegate {
     
@@ -37,8 +31,77 @@ class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPicke
         btnFacebook.layer.cornerRadius = 17
         btnFacebook.layer.borderWidth = 1
         btnFacebook.layer.borderColor = UIColor.black.cgColor
+        //
+        btnFacebook.addTarget(self, action: #selector(loginButtonClicked), for: UIControlEvents.touchUpInside)
+
         
         loadCountries()
+    }
+    
+    // Once the button is clicked, show the login dialog
+    @objc func loginButtonClicked() {
+        let loginManager = LoginManager()
+        loginManager.loginBehavior = LoginBehavior.native;
+        loginManager.logIn([ .publicProfile, .email ], viewController: self) { loginResult in
+            switch loginResult {
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("User cancelled login.")
+            case .success(let grantedPermissions, _, _):
+                if grantedPermissions.contains("email")
+                {
+                    self.startLoginWithFacebookData()
+                } else {
+                    Global.showToast(message: "Permiso de FB denegado", viewController: self)
+                }
+            }
+        }
+    }
+    
+    struct MyProfileRequest: GraphRequestProtocol {
+        struct Response: GraphResponseProtocol {
+            let rawResponse: Any?
+            init(rawResponse: Any?) {
+                // Decode JSON from rawResponse into other properties here.
+                self.rawResponse = rawResponse
+            }
+            
+            public var dictionaryValue: [String : Any]? {
+                return rawResponse as? [String : Any]
+            }
+        }
+        
+        var graphPath = "/me"
+        var parameters: [String : Any]? = ["fields": "id, name, first_name, last_name, email"]
+        var accessToken = AccessToken.current
+        var httpMethod: GraphRequestHTTPMethod = .GET
+        var apiVersion: GraphAPIVersion = .defaultVersion
+    }
+    
+    func startLoginWithFacebookData() {
+        if AccessToken.current != nil {
+            
+            
+            let connection = GraphRequestConnection()
+            connection.add(MyProfileRequest()) { response, result in
+                switch result {
+                case .success(let response):
+                    if let responseDictionary = response.dictionaryValue {
+                        print(responseDictionary)
+                        
+                        let name: String = responseDictionary["first_name"] as! String
+                        let lastName: String = responseDictionary["last_name"] as! String
+                        let email: String = responseDictionary["email"] as! String
+                        self.performRegisterRequest(name: name, lastName: lastName, email: email)
+                    }
+                    
+                case .failed(let error):
+                    print("Custom Graph Request Failed: \(error)")
+                }
+            }
+            connection.start()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,33 +160,37 @@ class RegisterViewController: UIViewController, CountrySelectedDelegate, UIPicke
             return
         }
         
-        var params: String = "&nombre=\(name!)&apellido=\(lastName!)&idpais=\(selectedCountryId)&email=\(email!)"
+        self.performRegisterRequest(name: name, lastName: lastName, email: email)
+    }
+        
+    func performRegisterRequest(name: String, lastName: String, email: String) {
+        var params: String = "&nombre=\(name)&apellido=\(lastName)&idpais=\(selectedCountryId)&email=\(email)"
         
         params = params.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
         
         Alamofire.request(Global.urlRegister + params)
             .responseJSON { response in
-            // print("Register result:", response.result)
-            debugPrint(response)
-            if let result = response.result.value {
-                let responseCode: Int16 =  result as! Int16
-                print("Response code for register: \(responseCode)")
-                /*var message = ""
-                if responseCode == 2 {
-                    message = "Usuario ya existente"
-                } else if responseCode == 1 {
-                    message = "Registro satisfactorio"
-                }*/
-                
-                // Global.showToast(message: message, viewController: self)
-                if responseCode == 1 || responseCode == 2 {
-                    Global.setAuthenticatedUser(name: name, email: email)
-                    self.performSegue(withIdentifier: "registerToMenuSegue", sender: self)
-                } else {
-                    Global.showToast(message: "Rpta del servidor desconocida", viewController: self)
+                // print("Register result:", response.result)
+                // debugPrint(response)
+                if let result = response.result.value {
+                    let responseCode: Int16 =  result as! Int16
+                    // print("Response code for register: \(responseCode)")
+                    /*var message = ""
+                     if responseCode == 2 {
+                     message = "Usuario ya existente"
+                     } else if responseCode == 1 {
+                     message = "Registro satisfactorio"
+                     }*/
+                    
+                    // Global.showToast(message: message, viewController: self)
+                    if responseCode == 1 || responseCode == 2 {
+                        Global.setAuthenticatedUser(name: name, email: email)
+                        self.performSegue(withIdentifier: "registerToMenuSegue", sender: self)
+                    } else {
+                        Global.showToast(message: "Rpta del servidor desconocida", viewController: self)
+                    }
+                    
                 }
-                
-            }
         }
     }
 
@@ -143,13 +210,4 @@ r5 dsa
     }
     */
 
-}
-
-extension Request {
-    public func debugLog() -> Self {
-        #if DEBUG
-            debugPrint(self)
-        #endif
-        return self
-    }
 }

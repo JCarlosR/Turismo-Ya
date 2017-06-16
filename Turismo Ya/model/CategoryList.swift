@@ -71,7 +71,7 @@ extension CategoryList: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Mostrar detalles de la categoría \(categories[indexPath.row].name))")
+        // print("Mostrar detalles de la categoría \(categories[indexPath.row].name))")
         delegate?.didSelectCategory(categoryId: categories[indexPath.row].id)
     }
     

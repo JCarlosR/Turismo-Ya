@@ -90,7 +90,7 @@ class TouristGuideViewController: UIViewController, LanguageSelectedDelegate {
                 }
             }
         } else {
-            print("read Language objects from realm")
+            // print("read Language objects from realm")
             let languages = realm.objects(Language.self)
             // convert from Results<Language> to [Language]
             self.languagePickerViewAdapter.languages = Array(languages)
@@ -162,7 +162,7 @@ class TouristGuideViewController: UIViewController, LanguageSelectedDelegate {
                 }
             }
         } else {
-            print("read Guide objects from realm")
+            // print("read Guide objects from realm")
             let guides = realm.objects(Guide.self)
             // convert from Results<Guide> to [Guide]
             self.touristGuideList.guides = Array(guides)

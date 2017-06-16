@@ -32,8 +32,8 @@ class SideMenuViewControllerTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        // SideMenuManager.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        // SideMenuManager.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         
         if let user = Global.user {
             labelUserName.text = user.name

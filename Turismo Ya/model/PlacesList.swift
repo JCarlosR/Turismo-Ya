@@ -76,7 +76,7 @@ extension PlacesList: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Se hizo clic sobre el lugar \(filteredPlaces[indexPath.row].abrev)")
+        // print("Se hizo clic sobre el lugar \(filteredPlaces[indexPath.row].abrev)")
         delegate?.didSelectPlace(place: filteredPlaces[indexPath.row])
     }
     

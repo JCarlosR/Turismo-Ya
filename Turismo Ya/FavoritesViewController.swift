@@ -108,7 +108,7 @@ class FavoritesViewController: UITableViewController {
         let place = places[indexPath.row]
         
         // Asignamos los valores a la celda y devolvemos
-        let imageUrl = URL(string: "http://52.170.87.192:50/premiun/images/producto/\(place.imageUrl)")
+        let imageUrl = URL(string: Global.imageBasePath + "producto/\(place.imageUrl)")
         cell.placeImageView.sd_setImage(with: imageUrl, placeholderImage: Global.defaultPlaceholder, options: SDWebImageOptions.progressiveDownload)
         cell.placeNameLabel.text = place.abrev
         cell.placeDescriptionLabel.text = place.descripcion
@@ -117,7 +117,7 @@ class FavoritesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Se hizo clic sobre el lugar \(places[indexPath.row].abrev)")
+        // print("Se hizo clic sobre el lugar \(places[indexPath.row].abrev)")
         self.selectedPlace = places[indexPath.row]
         performSegue(withIdentifier: "showFavoriteInfoSegue", sender: self)
     }

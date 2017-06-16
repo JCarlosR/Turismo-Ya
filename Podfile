@@ -31,5 +31,6 @@ target 'Turismo Ya' do
   pod 'RealmSwift'
 
   pod 'ImageSlideshow', '~> 1.2'
-  
+	
+  pod 'FacebookLogin'
 end

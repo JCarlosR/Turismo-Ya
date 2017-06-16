@@ -1,9 +1,5 @@
 //
 //  Global.swift
-//  Turismo Ya
-//
-//  Created by rimenri on 16/04/2017.
-//  Copyright © 2017 Programación y más. All rights reserved.
 //
 
 import UIKit
@@ -39,7 +35,7 @@ class Global: NSObject {
     
     
     // Images URL
-    static let imageBasePath: String = "http://13.88.16.49:50/ProgramaAdministrativoCopia/images/"
+    static let imageBasePath: String = "http://40.71.226.62:50/ProgramaAdministrativoCopia/images/"
     static let imageUrlWelcome: String = "http://www.regionlalibertad.gob.pe/images/autoridades/lvaldez.jpg"
     
     
@@ -173,7 +169,7 @@ class Global: NSObject {
     
     // Base URLs for API
     
-    static let baseUrl: String = "http://13.88.16.49:50/ProgramaAdministrativoCopia/modules/"
+    static let baseUrl: String = "http://40.71.226.62:50/ProgramaAdministrativoCopia/modules/"
     
     static let urlContries: String = baseUrl + "aperturar.php?task=loadPais"
     static let urlRegister: String = baseUrl + "aperturar.php?task=createUser"
